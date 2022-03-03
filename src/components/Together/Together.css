@@ -1,0 +1,65 @@
+.Together_Container {
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(98.95deg, #DAFFED 14.08%, rgba(254, 251, 193, 0.484375) 93.35%,
+     rgba(198, 245, 255, 0.48) 113.27%);
+}
+
+.Together_Container img {
+    width: 58px;
+    height: 58px;
+}
+
+.Together_Container h1 {
+    font-family: SUIT-SemiBold;
+    font-size: 35px;
+    line-height: 65px;
+}
+
+.Together_Container h3 {
+    font-family: SUIT-Thin;
+}
+
+.Together_Container button {
+    margin-top: 40px;
+    width: 150px;
+    height: 70px;
+    font-size: 20px;
+    background: none;
+    border: 2px solid #000;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all .35s;
+}
+
+.Together_Container button:hover {
+    background-color: #000;
+    color: #FFF;
+}
+
+@media screen and (max-width: 770px)  {
+    .Together_Container {
+        height: 300px;
+    }
+
+    .Together_Container img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .Together_Container h1 {
+        font-size: 30px;
+    }
+
+    .Together_Container h3 {
+        font-size: 15px;
+    }
+
+    .Together_Container button {
+        width: 120px;
+        height: 50px;
+        font-size: 15px;
+    }
+}

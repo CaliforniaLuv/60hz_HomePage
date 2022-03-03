@@ -1,11 +1,17 @@
 import './Header.css'
 
-function Header() {
+function Header({handleModal}) {
+
+    const openClick = () => {
+        handleModal("")
+    }
+    
     return(
         <>
             <header className="Header_Container">
                 <div>
                     <img src="./logo/60hz.svg"/>
+                    <img onClick={() => openClick()} src="./icon/menu.svg"/>
                 </div>
                 <nav className="Header_Nav_Box">
                     <div>
