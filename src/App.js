@@ -4,7 +4,8 @@ import Header from './components/Header/Header';
 import Together from './components/Together/Together';
 import Footer from './components/Footer/Footer';
 import Modal from './components/Modal/Modal';
-import Carousel_Slider from './components/Home/Carousel_Slider/Carousel_Slider';
+import Home from './page/home/Home';
+import About from './page/about/About';
 
 import { useState } from 'react';
 
@@ -17,10 +18,10 @@ function App() {
   return (
     <div className="App">
       <Header handleModal={handleModal}/>
+      <About/>
       <Together/>
       <Footer/>
       <Modal Modal_Hiden={modal} handleModal={handleModal}/>
-      {/* <Carousel_Slider/> */}
     </div>
   );
 }

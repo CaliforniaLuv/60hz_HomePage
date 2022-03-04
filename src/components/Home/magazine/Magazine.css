@@ -1,0 +1,35 @@
+.Magazine_Container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+}
+
+.Magazine_Container li {
+    border-bottom: 1px solid #000;
+}
+
+.Magazine_Br {
+    display: none;
+}
+
+.Magazine_Box div {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.Magazine_Box div span {
+    color: rgb(102, 102, 102);
+    font-size: 15px;
+}
+
+.Magazine_Box div img {
+    width: 14px;
+    height: 14px;
+}
+
+.Magazine_Box p {
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 50px;
+    line-height: 35px;
+}

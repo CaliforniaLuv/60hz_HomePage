@@ -1,0 +1,35 @@
+.About_Intro_Box {
+    padding-top: 250px;
+    background: #F5F8FA;
+}
+
+.About_Intro_Box p {
+    font-size: 45px;
+    font-family: SUIT-SemiBold;   
+    line-height: 90px;
+}
+
+.About_Br {
+    display: none;
+    
+}
+
+.About_Intro_Box span {
+    font-size: 25px;
+    line-height: 40px;
+}
+
+.About_Intro_Img {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.About_Intro_Img img {
+    height: 550px;
+}
+
+.About_Plan_Box {
+    display: flex;
+    justify-content: center;
+}

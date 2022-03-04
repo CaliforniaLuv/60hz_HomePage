@@ -1,16 +1,8 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import './Carousel_Slider.css'
 
 function Carousel_Slider() {
     const [pixel, setPixel] = useState(0)
-
-    // setTimeout(() => {
-    //     if(pixel === -606) {
-    //         setPixel(0)
-    //     } else {
-    //         setPixel(pixel - 202)
-    //     }
-    // }, 3000)
         
 
 
