@@ -13,7 +13,7 @@ function Magazine() {
                 </div>
                 <p>
                     "재생에너지<br className='Magazine_Br'/> 
-                    효율 높이는<br className='Magazine_Br'/><br className='Magazine_Br_def'/>
+                    효율 높이는<br className='Magazine_Br_def'/>
                     '가상발전소'...<br className='Magazine_Br'/>
                     선택 아닌 필수"
                 </p>

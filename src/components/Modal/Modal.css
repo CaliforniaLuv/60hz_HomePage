@@ -71,8 +71,8 @@
     }
 }
 
-@media screen and (min-width: 771px) {
+@media screen and (min-width: 770px) {
     .Modal_Container {
-        display: none
+        display: none;
     }
 }

@@ -1,7 +1,10 @@
 import './About.css'
-import Master_Plan from '../../components/About/Master_Plan/Master_Plan'
+import Master_Plan from '../../components/About/Master_Plan/Master_Plan';
+import Awards from '../../components/About/Award/Award'
+import Partner from '../../components/About/Partner/Partner';
+import Member from '../../components/About/Member/Member';
 
-function About() {
+function About({award}) {
     return(
         <section>
             <main className='About_Intro_Box'>
@@ -17,7 +20,24 @@ function About() {
             <div className='About_Plan_Box'>
                 <Master_Plan/>
             </div>
-            
+            <div className='About_Award_Box'>
+                <Awards award={award}/>
+            </div>
+            <div className='About_Partner_Box'>
+                <div>
+                    <h1>
+                        함께하는 기업들
+                    </h1>
+                    <span>
+                        2021년 9월 28일 기준
+                    </span>
+                    <Partner/>
+                </div>
+            </div>
+            <div className='About_Member_Box'>
+                <h1>식스티헤르츠 멤버들</h1>
+                <Member/>
+            </div>
         </section>
     )
 }

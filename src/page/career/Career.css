@@ -1,0 +1,30 @@
+.Career_Container {
+    padding-top: 200px;
+    background: linear-gradient(172.3deg, rgba(254, 251, 193, 0.92) 0%, 
+    rgba(198, 245, 255, 0) 90.22%);
+}
+
+.Career_Container main {
+    padding-bottom: 300px;
+}
+
+.Career_Container main h1 {
+    font-size: 45px;
+    line-height: 65px;
+}
+
+.Career_Container main > img {
+    margin-top: 30px;
+}
+
+.Career_Hire_Box {
+    margin: 300px auto;
+    max-width: 1400px;
+    text-align: left;
+    
+}
+
+.Career_Hire_Box h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}

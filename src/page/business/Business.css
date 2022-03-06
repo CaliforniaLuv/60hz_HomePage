@@ -1,0 +1,117 @@
+.Business_Container {
+    padding-top: 200px;
+}
+
+.Business_SunMap_Box {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 200px;
+}
+
+.Business_Youtube {
+    box-shadow: rgb(0 0 0 / 20%) 10px 10px 20px;
+    padding: 25px;
+    border-radius: 45px;
+    width: 850px;
+    height: 500px;
+}
+
+.Business_SunMap_Box article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-left: 80px;
+}
+
+.Business_SunMap_Box article > img {
+    width: 60px;
+    height: 60px;
+}
+
+.Business_SunMap_Box article h1 {
+    font-size: 50px;
+    line-height: 90px;
+}
+
+.Business_SunMap_Box article h3 {
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 100;
+}
+
+.Business_SunMap_Box article span {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 25px;
+    color: #1D336A;
+    font-family: SUIT-SemiBold;
+}
+
+.Business_Icon {
+    width: 25px;
+    height: 25px;
+}
+
+
+/* ################## Article Bottom ################## */
+
+.Business_Monitoring_Box {
+    display: flex;
+    justify-content: center;
+    background: #F5F8FA;
+    padding: 200px 0;
+}
+
+.Business_Img {
+    box-shadow: rgb(0 0 0 / 20%) 10px 10px 20px;
+    padding: 25px;
+    border-radius: 45px;
+    width: 850px;
+    height: 500px;
+    background: #fff;
+}
+
+.Business_Monitoring_Box article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-right: 80px;
+}
+
+.Business_Monitoring_Box article > img {
+    width: 60px;
+    height: 60px;
+}
+
+.Business_Monitoring_Box article > h1:nth-child(2) {
+    font-size: 50px;
+    line-height: 90px;
+}
+
+.Business_Monitoring_Box article > h1:nth-child(3) {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+.Business_Monitoring_Box article h3 {
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 100;
+}
+
+.Business_Monitoring_Box article span {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 25px;
+    color: #1D336A;
+    font-family: SUIT-SemiBold;
+}
+
+.Business_Icon {
+    width: 25px;
+    height: 25px;
+}

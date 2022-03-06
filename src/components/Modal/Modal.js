@@ -6,12 +6,11 @@ function Modal({Modal_Hiden, handleModal}) {
     const [modal_close, Modal_close] = useState('')
 
     const openClick = () => {
-        // Modal_close('Modal_Close')
         handleModal('Modal_Close')
     }
 
     return(
-        <section className={`Modal_Container ${Modal_Hiden}`}>
+        <section className={`${Modal_Hiden} Modal_Container`}>
             <div className='Modal_Main_Box'>
                 <img src="./logo/60hz.svg"/>
                 <img onClick={() => openClick()} src="./icon/close.svg"/>

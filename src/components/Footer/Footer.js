@@ -25,9 +25,9 @@ function Footer() {
             </section>
             <section className='Footer_Company_Box'>
                 <div>
-                    <sapn className='Footer_Company_name'>
+                    <span className='Footer_Company_name'>
                         식스티헤르츠 주식회사
-                    </sapn>
+                    </span>
                     <span>
                         | 대표: 김종규
                     </span>

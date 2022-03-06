@@ -7,6 +7,11 @@
     z-index: 1;
 }
 
+.Header_Container_Show {
+    border-bottom: 1px solid rgb(195, 193, 193);
+    background-color:#fff;
+}
+
 .Header_Container > div {
     text-align: left;
     width: 30%;
@@ -46,6 +51,10 @@
 
 .Header_Nav_Box div p{
     cursor: pointer;
+}
+
+@media screen  {
+    
 }
 
 @media screen and (max-width: 1300px) {

@@ -5,10 +5,10 @@ function Master_Plan() {
         <ul className='Master_Container'>
             <li>
                 <h1>
-                    MASTER_PLAN
+                    MASTER PLAN
                 </h1>
-                <h3>기후위기 대응을 위하여 2030</h3>
-                <h3>년까지 하고자 하는 일</h3>
+                <h3>우리는 앞으로 10년간 다음과 같은 계획을</h3>
+                <h3>신속하게 실행하겠습니다.</h3>
             </li>
             <li className='Master_Box'>
                 <h1>

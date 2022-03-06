@@ -1,7 +1,7 @@
 .Master_Container {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 20px 70px;
+    gap: 20px 30px;
     width: 1150px;
 }
 
@@ -9,15 +9,21 @@
     text-align: left;
 }
 
-.Master_Box h3 {
+.Master_Container > li:nth-child(1) > h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.Master_Container > li > h3 {
     font-family: SUIT-Thin;
 }
 
 .Master_Box h1 {
     border-bottom: 1px solid #000;
     text-align: left;
-    line-height: 50px;
+    padding-bottom: 10px;
     font-family: SUIT-Thin;
+    font-size: 30px;
 }
 
 .Master_Box h3:nth-child(2) {
@@ -31,9 +37,17 @@
     font-size: 19px;
 }
 
+.Master_PJ1 img {
+    margin-bottom: -4px;
+}
+
 .Master_PJ2 {
     margin-top: 10px;
     font-family: SUIT-Regulur;
     color: #EC5B44;
     font-size: 19px;
+}
+
+.Master_PJ2 img {
+    margin-bottom: -4px;
 }

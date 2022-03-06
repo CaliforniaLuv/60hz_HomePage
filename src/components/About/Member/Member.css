@@ -1,0 +1,21 @@
+.Member_Container {
+    margin: 50px 0;
+}
+
+.Member_Container h3 {
+    font-size: 25px;
+    line-height: 45px;
+}
+
+.Member_Container h3 span {
+    color: #EC5B44;
+}
+
+.Member_Img {
+    width: 70%;
+}
+
+.Member_Br {
+    display: none
+}
+

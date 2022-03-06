@@ -11,7 +11,6 @@
 
 .About_Br {
     display: none;
-    
 }
 
 .About_Intro_Box span {
@@ -30,6 +29,38 @@
 }
 
 .About_Plan_Box {
+    padding: 100px 0;
     display: flex;
     justify-content: center;
+    background: rgb(245, 248, 250);    
+}
+
+.About_Award_Box {
+    display: flex;
+    justify-content: center;
+}
+
+.About_Partner_Box {
+    margin-top: 150px;
+    margin-bottom: 200px;
+    width: 100%;
+}
+
+.About_Partner_Box > div:nth-child(1) h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.About_Partner_Box > div:nth-child(1) > span {
+    font-size: 17px;
+    color: #848484;
+}
+
+.About_Member_Box {
+    padding: 200px 0;
+    background: rgb(245, 248, 250);    
+}
+
+.About_Member_Box > h1 { 
+    font-size: 40px;
 }
