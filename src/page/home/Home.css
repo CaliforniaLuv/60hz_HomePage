@@ -84,7 +84,7 @@
 
 .Home_Company_Box > div:nth-child(1) {
     width: 80%;
-    border: 0.5px solid rgb(137, 137, 137);
+    border-top: 1px solid rgb(137, 137, 137);
     margin: 0 auto 200px auto;
 }
 

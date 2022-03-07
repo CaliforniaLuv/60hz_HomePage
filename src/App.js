@@ -34,21 +34,22 @@ function App() {
 
 
   // props
-  const [partnerY, setParterY] = useState(false)
+  const [partnerY, setParterY] = useState(0)
 
   // 
   const handleParterY = (e) => {
     setParterY(e)
-    console.log(e)
+    console.log("app.js에서 찍힌거",e)
   }
 
   return (
     <BrowserRouter>
+ 
       <ScrollToTop partnerY={partnerY}/>
       <div className="App">
         <Header handleModal={handleModal} handleAward={handleAward}/>
         <Routes>
-          <Route exact path="/" element={<Home handleParterY={handleParterY}/>} />
+          <Route exact path="/" element={<Home handleParterY={handleParterY} partnerY={partnerY}/>} />
           <Route  path="/about" element={<About award={award} partnerY={partnerY} handleParterY={handleParterY}/>} />
           <Route  path="/business" element={<Business/>} />
           <Route  path="/career" element={<Career/>} />

@@ -10,7 +10,6 @@
 
 .Working_Text_Box {
     display: flex;
-    
     margin-top: 80px;
     gap: 210px;
     text-align: left;
@@ -33,4 +32,157 @@
     font-size: 22px;
     line-height: 35px;
     font-weight:lighter
+}
+
+@media screen and (max-width: 1550px) {
+    .Working_Text_Box {
+        gap: 100px;
+        justify-content: center;
+    }
+    .Working_Main {
+        display: flex;
+        margin-left: 50px;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .Working_Text_Box {
+        gap: 60px;
+    }
+
+    .Working_Text_Box ul > h3 {
+        font-size: 25px;
+    }
+
+    .Working_Text_Box ul li {
+        font-size: 20px;
+    }
+    .Working_Text_Box span { 
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 1080px) {
+    
+    .Working_Text_Box {
+        gap: 30px;
+    }
+
+    .Working_Text_Box ul > h3 {
+        font-size: 22px;
+    }
+
+    .Working_Text_Box ul li {
+        font-size: 17px;
+    }
+
+    .Working_Text_Box span { 
+        font-size: 17px;
+    }
+    
+    .Working_Text_Box img{
+        width: 75px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .Working_Text_Box {
+        flex-direction: column;
+        text-align: left;
+        margin-left: 100px;
+    }
+
+    .Working_Text_Box div:nth-child(1) {
+        margin-bottom: 50px;
+    }
+
+    .Working_Text_Box div:nth-child(2) {
+        margin-bottom: 50px;
+    }
+
+    .Working_Main {
+        display: block;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+
+    .Working_Text_Box ul > h3 {
+        font-size: 30px;
+    }
+
+    .Working_Text_Box ul li {
+        font-size: 23px;
+    }
+
+    .Working_Text_Box span { 
+        font-size: 23px;
+    }
+    
+    .Working_Text_Box img{
+        width: 90px;
+        height: 85px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+
+    .Working_Text_Box {
+        margin-left: 50px;
+    }
+
+    .Working_Main {
+       font-size: 35px;
+    }
+
+
+    .Working_Text_Box ul > h3 {
+        font-size: 28px;
+    }
+
+    .Working_Text_Box ul li {
+        font-size: 23px;
+    }
+
+    .Working_Text_Box span { 
+        font-size: 23px;
+    }
+    
+    .Working_Text_Box img{
+        width: 90px;
+        height: 85px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .Working_Text_Box {
+        margin-left: 50px;
+    }
+
+    .Working_Main {
+       font-size: 30px;
+    }
+
+
+    .Working_Text_Box ul > h3 {
+        font-size: 25px;
+    }
+
+    .Working_Text_Box ul li {
+        font-size: 20px;
+    }
+
+    .Working_Text_Box span { 
+        font-size: 20px;
+    }
+    
+    .Working_Text_Box img{
+        width: 75px;
+        height: 70px;
+    }
 }

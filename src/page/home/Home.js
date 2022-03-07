@@ -5,8 +5,9 @@ import Magazine from '../../components/Home/magazine/Magazine'
 import Company from '../../components/Home/Company/Compony'
 import ScrollToTop from "../../router/ScrollToTop";
 
-function Home({handleParterY}) {
+function Home({handleParterY, partnerY}) {
 
+    
     return(
         <section>
             <main className='Home_Intro_Box'>
@@ -54,6 +55,7 @@ function Home({handleParterY}) {
                     </a>
                 </div>
                 <div className='Home_Company_Box'>
+                    {/*  border Line 선  */}
                     <div></div>
                     <div>
                         <h1>
@@ -80,5 +82,9 @@ function Home({handleParterY}) {
         </section>
     )
 }
+
+function refreshPage(){ 
+    window.location.reload(); 
+  }
 
 export default Home
