@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
 import './Home.css'
 import Slide from '../../components/Home/Carousel_Slider/Carousel_Slider'
 import Magazine from '../../components/Home/magazine/Magazine'
 import Company from '../../components/Home/Company/Compony'
+import ScrollToTop from "../../router/ScrollToTop";
 
-function Home() {
+function Home({handleParterY}) {
 
     return(
         <section>
@@ -16,9 +18,15 @@ function Home() {
                         IT 소셜벤처입니다.
                     </p>
                 </div>
+       
                 <div>
-                    <button className='Home_Button'>더 알아보기</button>
+                    <Link to="/about"
+                          style={{ textDecoration: "none", color: "black" }}
+                    >
+                        <button className='Home_Button'>더 알아보기</button>
+                    </Link>
                 </div>
+                
                 <div className='Home_Youtube_Box'>
                     <div className='Home_Youtube_Line'>
                         <iframe className='Home_Youtube' src="https://www.youtube-nocookie.com/embed/yGeiyZLHnlI?
@@ -39,7 +47,11 @@ function Home() {
                     <Magazine/>
                 </article>
                 <div>
-                    <button className='Home_Button'>더보기</button>
+                    <a href="https://blue-ocarina-b66.notion.site/7521f6afa92c418080a84bfd148b74ea" 
+                       target="_blank"
+                    >
+                        <button className='Home_Button'>더보기</button>
+                    </a>
                 </div>
                 <div className='Home_Company_Box'>
                     <div></div>
@@ -55,10 +67,13 @@ function Home() {
                         </div>
                     </div>
                     <div className='Home_Partners_Box'>
-                        <a>
+                        <Link to="/about"
+                              style={{ textDecoration: "none", color: "black" }}
+                              onClick={() => handleParterY(true)}
+                        >      
                             더 많은 파트너 보기
-                            <img src="./icon/arrow_forward.svg"/>
-                        </a>
+                            <img src="./icon/arrow_forward.svg"/>   
+                        </Link>
                     </div>
                 </div>
             </div>

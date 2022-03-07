@@ -1,5 +1,6 @@
 import './App.css';
 import './fonts/font.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from './components/Header/Header';
 import Together from './components/Together/Together';
 import Footer from './components/Footer/Footer';
@@ -8,6 +9,7 @@ import Home from './page/home/Home';
 import About from './page/about/About';
 import Business from './page/business/Business';
 import Career from './page/career/Career';
+import ScrollToTop from './router/ScrollToTop';
 
 import { useState } from 'react';
 
@@ -30,15 +32,32 @@ function App() {
     setAward(e)
   }
 
+
+  // props
+  const [partnerY, setParterY] = useState(false)
+
+  // 
+  const handleParterY = (e) => {
+    setParterY(e)
+    console.log(e)
+  }
+
   return (
-    <div className="App">
-      <Header handleModal={handleModal} handleAward={handleAward}/>
-      {/* <About award={award}/> */}
-      <Home />
-      <Together/>
-      <Footer/>
-      <Modal Modal_Hiden={modal} handleModal={handleModal}/>
-    </div>
+    <BrowserRouter>
+      <ScrollToTop partnerY={partnerY}/>
+      <div className="App">
+        <Header handleModal={handleModal} handleAward={handleAward}/>
+        <Routes>
+          <Route exact path="/" element={<Home handleParterY={handleParterY}/>} />
+          <Route  path="/about" element={<About award={award} partnerY={partnerY} handleParterY={handleParterY}/>} />
+          <Route  path="/business" element={<Business/>} />
+          <Route  path="/career" element={<Career/>} />
+        </Routes>
+        <Together/>
+        <Footer/>
+        <Modal Modal_Hiden={modal} handleModal={handleModal}/>
+      </div>
+    </BrowserRouter>
   );
 }
 

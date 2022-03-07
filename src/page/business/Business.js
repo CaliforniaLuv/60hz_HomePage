@@ -12,31 +12,42 @@ function Business() {
                     </iframe>
                 </aside>
                 <article>
-                    <img src="./imoge/map.svg"/>
-                    <h1>햇빛바람지도</h1>
-                    <h3>약 8만여개의 태양광, 풍력 발전소를 한 눈에</h3>
-                    <h3>확인해보세요. AI기술로 미래 발전량을 예측하고,</h3>
-                    <h3>기상 정보를 다양한 방식으로 시각화하였습니다.</h3>
-                    <h3>공공데이터 활용 우수라례로 대통랴령상을</h3>
-                    <h3>수상하였습니다.</h3>
-                    <span>햇빛바람지도 바로가기
-                        <img className="Business_Icon" src="./icon/arrow_forward.svg"/>
-                    </span>
+                    <div className='Business_Main_Box'>
+                        <img src="./imoge/map.svg"/>
+                        <h1>햇빛바람지도</h1>
+                    </div>
+                    <h3>약 8만여개의 태양광, 풍력 발전소를 한 눈에 <br className='Business_Br'/> 확인해보세요.
+                    <br className='Business_Br_After'/> AI기술로 미래 발전량을 예측하고, <br/>
+                    기상 정보를 다양한 방식으로 시각화하였습니다. <br/>
+                    공공데이터 활용 우수라례로 대통령상을  <br className='Business_Br'/> 수상하였습니다.</h3>
+                    <a href='https://map.60hz.io/index.html' 
+                           target="_blank" style={{ textDecoration: "none", color: "#1D336A" }} >
+                        <span>햇빛바람지도 바로가기
+                            <img className="Business_Icon" src="./icon/arrow_forward.svg"/>
+                        </span>
+                    </a>
                 </article>
             </div>
             <div className="Business_Monitoring_Box">
                 <article>
-                <img src="./imoge/audio.svg"/>
-                    <h1>재생에너지</h1>
-                    <h1>통합관제시스템</h1>
-                    <h3>보유하고 계신 다양한 분산 자원을</h3>
-                    <h3>효율적으로 관리하고 싶으신가요?</h3>
-                    <h3>전력 중개 사업, 발전량 예측과 같은</h3>
-                    <h3>에너지 신사업에 참여하고 싶으신가요?</h3>
-                    <h3>식스티헤르츠가 도와드리겠습니다.</h3>
-                    <span>솔루션 문의하기
-                        <img className="Business_Icon" src="./icon/arrow_forward.svg"/>
-                    </span>
+                    <div className='Business_Main_Box'>
+                        <img src="./imoge/audio.svg"/>
+                        <div>
+                            <h1>재생에너지</h1>
+                            <h1>통합관제시스템</h1>
+                        </div>
+                    </div>
+                    <h3>보유하고 계신 다양한 분산 자원을  <br className='Business_Br'/>
+                    효율적으로 <br className='Business_Br_After'/> 관리하고 싶으신가요?  <br className='Business_Br'/>
+                    전력 중개 사업, 발전량 예측과 같은 <br className='Business_Br_After'/>  <br className='Business_Br'/>
+                    에너지 신사업에 참여하고 싶으신가요? <br className='Business_Br_After'/> <br className='Business_Br'/>
+                    식스티헤르츠가 도와드리겠습니다.</h3>
+                    <a href='https://docs.google.com/forms/d/e/1FAIpQLSer94Hec0tHCNQ3FkYYtTA8S7DGU48LYX6GNvqTw8uDFIeWgA/viewform' 
+                           target="_blank" style={{ textDecoration: "none", color: "#1D336A" }} >
+                        <span>솔루션 문의하기
+                            <img className="Business_Icon" src="./icon/arrow_forward.svg"/>
+                        </span>
+                    </a>
                 </article>
                 <aside>
                     <img  className="Business_Img" src="./ilerst/통관시.png"/>

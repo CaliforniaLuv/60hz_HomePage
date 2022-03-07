@@ -73,48 +73,54 @@
 }
 
 
-.slide-out-fwd-bottom1 {
-	-webkit-animation: slide-out-fwd-bottom 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: slide-out-fwd-bottom 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
 
-.slide-out-fwd-bottom2 {
-	-webkit-animation: slide-out-fwd-bottom 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: slide-out-fwd-bottom 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-.slide-out-fwd-bottom3 {
-	-webkit-animation: slide-out-fwd-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: slide-out-fwd-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-.slide-out-fwd-bottom4 {
-	-webkit-animation: slide-out-fwd-bottom 1.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: slide-out-fwd-bottom 1.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-@-webkit-keyframes slide-out-fwd-bottom {
-  100%{
-    -webkit-transform: translateZ(-1400px) translateY(300px);
-            transform: translateZ(-1400px) translateY(300px);
-    opacity: 0;
-  }
-  0% {
-    -webkit-transform: translateZ(0) translateY(0);
-            transform: translateZ(0) translateY(0);
-    opacity: 1;
+@media screen and (max-width: 1480px) {
+  .Award_Container li {
+    width: 300px;
+    height: 200px;
   }
 }
 
-@keyframes slide-out-fwd-bottom {
-  100% {
-    -webkit-transform: translateZ(-1400px) translateY(300px);
-            transform: translateZ(-1400px) translateY(300px);
-    opacity: 0;
+@media screen and (max-width: 1280px) {
+  .Award_Container li {
+    font-size: 17px;
+    width: 250px;
+    height: 200px;
   }
-  0% {
-    -webkit-transform: translateZ(0) translateY(0);
-            transform: translateZ(0) translateY(0);
-    opacity: 1;
+
+  .Award_Container img {
+    height: 30px;  
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  
+  .Award_Container {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+}
+
+@media screen and (max-width: 770px) {
+  .Award_Container {
+    grid-template-columns: repeat(1,1fr);
+    width: 700px;
+  }
+
+  .Award_Container li {
+    font-size: 17px;
+    width: 90%;
+    height: 130px;
+    margin: 0 auto;
+  }
+
+  .Award_Container img {
+    height: 30px;  
+    margin-bottom: 5px;
+  }
+
+  .Award_Br {
+    display: none;
   }
 }

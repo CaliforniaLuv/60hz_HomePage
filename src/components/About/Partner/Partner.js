@@ -28,7 +28,8 @@ function Partner() {
                 </span>
                 <img src="./logo_png/굿네이버스.png"/>
                 <img src="./logo_png/그리드위즈.png"/>
-                <img src="./logo_png/인업스.png"/>
+                <img className='Partner_Box_Img' src="./logo_png/인업스.png"/>
+                <img className='Partner_Box_Mobile_Inups' src="./logo_png/인업스_2.svg"/>
             </div>
             <div className="Partner_Box">
                 <span>
@@ -36,7 +37,8 @@ function Partner() {
                 </span>
                 <img src="./logo_png/임팩트.png"/>
                 <img src="./logo_png/소셜혁신연구소.png"/>
-                <img src="./logo_png/유쾌한반란.png"/>
+                <img className='Partner_Box_Img' src="./logo_png/유쾌한반란.png"/>
+                <img className='Partner_Box_Mobile' src="./logo_png/유쾌한반란_2.svg"/>
             </div>
         </section>
     )

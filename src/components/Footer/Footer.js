@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import './Footer.css'
 
 function Footer() {
@@ -7,19 +8,49 @@ function Footer() {
                 <div>
                     <div>
                         <h3>채용문의</h3>
-                        <span>admin@60hz.io</span>
+                        <Link
+                            to='#'
+                            onClick={(e) => {
+                                window.location = "mailto:hello@60hz.io";
+                                e.preventDefault();
+                            }}
+                            style={{ textDecoration: "none", color: "black"}}
+                        >
+                            <span>admin@60hz.io</span>
+                        </Link>
                     </div>
                     <div>
                         <h3>기타문의</h3>
-                        <span>db.jung@60hz.io</span>
+                        <Link
+                            to='#'
+                            onClick={(e) => {
+                                window.location = "mailto:db.jung@60hz.io";
+                                e.preventDefault();
+                            }}
+                            style={{ textDecoration: "none", color: "black"}}
+                        >
+                            <span>db.jung@60hz.io</span>
+                        </Link>
                     </div>
                 </div>
                 <div>
                     <div className='Footer_Infor_Box'>
                         <h3>식스티헤르츠</h3>
-                        <span>ABOUT</span>
-                        <span>BUSINESS</span>
-                        <span>CAREER</span>
+                        <Link to="/about"
+                            style={{ textDecoration: "none", color: "black", textAlign: "left" }}
+                        >
+                            <span>ABOUT</span>
+                        </Link>
+                        <Link to="/business"
+                            style={{ textDecoration: "none", color: "black", textAlign: "left" }}
+                        >
+                            <span>BUSINESS</span>
+                        </Link>
+                        <Link to="/career"
+                            style={{ textDecoration: "none", color: "black", textAlign: "left" }}
+                        >
+                            <span>CAREER</span>
+                        </Link>
                     </div>
                 </div>
             </section>

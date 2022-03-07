@@ -1,4 +1,5 @@
 import './Master_Plan.css'
+import { Link } from "react-router-dom";
 
 function Master_Plan() {
     return(
@@ -7,18 +8,21 @@ function Master_Plan() {
                 <h1>
                     MASTER PLAN
                 </h1>
-                <h3>우리는 앞으로 10년간 다음과 같은 계획을</h3>
-                <h3>신속하게 실행하겠습니다.</h3>
+                <h3>우리는 앞으로 10년간 다음과 같은 계획을 <br className='Master_Br'/> 신속하게 실행하겠습니다.</h3>
+                
             </li>
             <li className='Master_Box'>
                 <h1>
                     1
                 </h1>
                 <h3>다양한 분산 전원을 연결시킨다.</h3>
-                <h3>(재생에너지 발전소, 전기차, 스마트가전 등)</h3>
+                <h3>(재생에너지 발전소, 전기차, <br className='Master_Br_Mobile'/>스마트가전 등)</h3>
                 <div className='Master_PJ1'>
-                    <span>햇빛바람지도</span>
-                    <img src='./icon/arrow_forward.svg'/>
+                    <a href='https://map.60hz.io/index.html' 
+                       target="_blank" style={{ textDecoration: "none", color: "#EC5B44" }}>
+                        <span>햇빛바람지도</span>
+                        <img src='./icon/arrow_forward.svg'/>
+                    </a>
                 </div>
             </li>
             <li className='Master_Box'>

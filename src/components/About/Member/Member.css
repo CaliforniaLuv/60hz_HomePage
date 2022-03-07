@@ -19,3 +19,20 @@
     display: none
 }
 
+@media screen and (max-width: 770px) {
+    .Member_Container h3 {
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    .Member_Br {
+        display: block
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Member_Container h3 {
+        font-size: 17px;
+        line-height: 30px;
+    }
+}

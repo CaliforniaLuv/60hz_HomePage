@@ -13,6 +13,10 @@
     display: none;
 }
 
+.About_Img_Tab {
+    display: none;
+}
+
 .About_Intro_Box span {
     font-size: 25px;
     line-height: 40px;
@@ -63,4 +67,54 @@
 
 .About_Member_Box > h1 { 
     font-size: 40px;
+}
+
+@media screen and (max-width: 1280px) {
+    .About_Intro_Box p {
+        font-size: 37px;
+        margin-bottom: 25px;
+    }
+
+    .About_Intro_Box span {
+        font-size: 17px;
+        line-height: 30px;
+    }
+
+    .About_Intro_Img img {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .About_Img_Desk {
+        display: none;
+    }
+
+    .About_Intro_Img img {
+        height: 550px;
+    }
+
+    .About_Img_Tab {
+        display: block;
+        width: 650px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .About_Br {
+        display: block;
+    }
+
+    .About_Br_De {
+        display: none;
+    }
+
+    .About_Intro_Box p {
+        line-height: 50px;
+    }
+
+    .About_Intro_Img img {
+        width: 470px;
+        height: 420px;
+    }
 }

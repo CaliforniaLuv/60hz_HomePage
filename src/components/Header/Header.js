@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from "react-router-dom";
 import './Header.css'
 
 function Header({handleModal, handleAward}) {
@@ -42,29 +43,46 @@ function Header({handleModal, handleAward}) {
         <>
             <header className={`Header_Container ${scrollY}`}>
                 <div>
-                    <img src="./logo/60hz.svg"/>
+
+                    <a href="/"
+                    >
+                        <img src="./logo/60hz.svg"/>
+                    </a>
                     <img onClick={() => openClick()} src="./icon/menu.svg"/>
                 </div>
                 <nav className="Header_Nav_Box">
                     <div>
-                        <a>
+                        <a href='https://map.60hz.io/index.html' 
+                           target="_blank" style={{ textDecoration: "none", color: "#fff" }} >
                             햇빛바람지도
                         </a>
                     </div>
                     <div>
-                        <p>
-                            ABOUT
-                        </p>
+                        <Link to="/about"
+                            style={{ textDecoration: "none", color: "black" }}
+                        >
+                            <p>
+                                ABOUT
+                            </p>
+                        </Link>
                     </div>
                     <div>
-                        <p>
-                            BUSINESS
-                        </p>
+                        <Link to="/business"
+                            style={{ textDecoration: "none", color: "black" }}
+                        >
+                            <p>
+                                BUSINESS
+                            </p>
+                        </Link>
                     </div>
                     <div>
-                        <p>
-                        CAREER
-                        </p>
+                        <Link to="/career"
+                            style={{ textDecoration: "none", color: "black" }}
+                        >
+                            <p>
+                            CAREER
+                            </p>
+                        </Link>
                     </div>
                 </nav>
             </header>

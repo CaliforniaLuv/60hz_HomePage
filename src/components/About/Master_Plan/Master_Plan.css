@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 20px 30px;
-    width: 1150px;
+    width: 1300px;
 }
 
 .Master_Container li {
@@ -26,12 +26,16 @@
     font-size: 30px;
 }
 
+.Master_Box h3 {
+    font-size: 23px;
+}
+
 .Master_Box h3:nth-child(2) {
     margin-top: 20px;
 }
 
 .Master_PJ1 {
-    margin-top: 30px;
+    margin-top: 40px;
     font-family: SUIT-Regulur;
     color: #EC5B44;
     font-size: 19px;
@@ -50,4 +54,94 @@
 
 .Master_PJ2 img {
     margin-bottom: -4px;
+}
+
+.Master_Br_Mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1280px) {
+    .Master_Container {
+        width: 850px;
+    }
+
+    .Master_Container > li:nth-child(1) > h1 {
+        font-size: 40px;
+    }
+
+    .Master_Container > li:nth-child(1) > h3 {
+        font-size: 15px;
+    }
+
+    .Master_PJ1 {
+        margin-top: 27px;
+    }
+
+    .Master_Box h3 {
+       font-size: 15px;
+    }
+
+    .Master_PJ1 img {
+        width: 20px;
+        height: 20px;
+    }
+    .Master_PJ2 img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 935px) {
+
+    .Master_Container {
+        grid-template-columns: repeat(2,1fr);
+        width: 600px;
+    }
+    
+    .Master_Container li:nth-child(1) {
+        grid-column: span 2;
+    }
+
+    .Master_PJ1 {
+        font-size: 15px;
+    }
+    .Master_PJ2 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+
+    .Master_Container {
+        
+        width: 400px;
+    }
+
+    .Master_Container > li:nth-child(1) > h1 {
+        font-size: 35px;
+    }
+
+    .Master_Container > li:nth-child(1) > h3 {
+        font-size: 15px;
+    }
+
+    .Master_Box h1 {
+        font-size: 25px;
+    }
+    
+    .Master_Box h3 {
+        font-size: 13px;
+    }
+
+    .Master_PJ1 {
+        margin-top: 10px;
+        font-size: 13px;
+    }
+    .Master_PJ2 {
+        font-size: 13px;
+    } 
+
+    .Master_Br_Mobile {
+        display: block;
+    }
 }

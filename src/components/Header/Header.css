@@ -18,6 +18,10 @@
     padding-left: 110px;
 }
 
+.Header_Container > div > img {
+    cursor: pointer;
+}
+
 
 .Header_Container div:nth-child(1) img:nth-child(2) {
     display: none;
@@ -38,7 +42,7 @@
 
 .Header_Nav_Box div:nth-child(1) {
     width: 130px;
-    height: 30px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +50,7 @@
     cursor: pointer;
     color: #fff;
     background-color: #EC5B44;
-    border-radius: 20px;
+    border-radius: 50px;
 }
 
 .Header_Nav_Box div p{
