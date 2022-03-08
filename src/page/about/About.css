@@ -35,17 +35,17 @@
 .About_Plan_Box {
     padding: 100px 0;
     display: flex;
-    justify-content: center;
-    background: rgb(245, 248, 250);    
+    justify-content: center;  
 }
 
 .About_Award_Box {
     display: flex;
     justify-content: center;
+    margin: 100px 0;
 }
 
 .About_Partner_Box {
-    margin-top: 150px;
+    padding-top: 150px;
     margin-bottom: 200px;
     width: 100%;
 }

@@ -41,7 +41,7 @@ function About({award, partnerY, handleParterY}) {
             <div className='About_Award_Box'>
                 <Awards award={award}/>
             </div>
-            <div className='About_Partner_Box'>
+            <div className='About_Partner_Box' id="Partner">
                 <div>
                     <h1>
                         함께하는 기업들

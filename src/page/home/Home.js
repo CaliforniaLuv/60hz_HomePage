@@ -3,7 +3,7 @@ import './Home.css'
 import Slide from '../../components/Home/Carousel_Slider/Carousel_Slider'
 import Magazine from '../../components/Home/magazine/Magazine'
 import Company from '../../components/Home/Company/Compony'
-import ScrollToTop from "../../router/ScrollToTop";
+import { HashLink } from 'react-router-hash-link';
 
 function Home({handleParterY, partnerY}) {
 
@@ -69,22 +69,17 @@ function Home({handleParterY, partnerY}) {
                         </div>
                     </div>
                     <div className='Home_Partners_Box'>
-                        <Link to="/about"
-                              style={{ textDecoration: "none", color: "black" }}
-                              onClick={() => handleParterY(true)}
+                        <HashLink smooth to="/about#Partner"
+                                  style={{ textDecoration: "none", color: "black" }}
                         >      
                             더 많은 파트너 보기
                             <img src="./icon/arrow_forward.svg"/>   
-                        </Link>
+                        </HashLink>
                     </div>
                 </div>
             </div>
         </section>
     )
 }
-
-function refreshPage(){ 
-    window.location.reload(); 
-  }
 
 export default Home

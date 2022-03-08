@@ -10,6 +10,7 @@ import About from './page/about/About';
 import Business from './page/business/Business';
 import Career from './page/career/Career';
 import ScrollToTop from './router/ScrollToTop';
+import NotFound from './router/NotFound';
 
 import { useState } from 'react';
 
@@ -53,6 +54,7 @@ function App() {
           <Route  path="/about" element={<About award={award} partnerY={partnerY} handleParterY={handleParterY}/>} />
           <Route  path="/business" element={<Business/>} />
           <Route  path="/career" element={<Career/>} />
+          <Route path="*" element={<NotFound/>} />
         </Routes>
         <Together/>
         <Footer/>

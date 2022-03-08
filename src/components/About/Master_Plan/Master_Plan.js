@@ -1,5 +1,6 @@
 import './Master_Plan.css'
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 function Master_Plan() {
     return(
@@ -33,8 +34,11 @@ function Master_Plan() {
                 <h3>효율적으로 관리할 수 있게 한다.</h3>
                 <h3>(발전량 예측, 통합 관제 등)</h3>
                 <div className='Master_PJ2'>
-                    <span>통합관제시스템</span>
-                    <img src='./icon/arrow_forward.svg'/>
+                    <HashLink smooth to="/business#Product"
+                              style={{ textDecoration: "none", color: "#EC5B44" }}>
+                        <span>통합관제시스템</span>
+                        <img src='./icon/arrow_forward.svg'/>
+                    </HashLink>
                 </div>
             </li>
             <li className='Master_Box'>

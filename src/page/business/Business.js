@@ -20,15 +20,18 @@ function Business() {
                     <br className='Business_Br_After'/> AI기술로 미래 발전량을 예측하고, <br/>
                     기상 정보를 다양한 방식으로 시각화하였습니다. <br/>
                     공공데이터 활용 우수라례로 대통령상을  <br className='Business_Br'/> 수상하였습니다.</h3>
-                    <a href='https://map.60hz.io/index.html' 
-                           target="_blank" style={{ textDecoration: "none", color: "#1D336A" }} >
-                        <span>햇빛바람지도 바로가기
-                            <img className="Business_Icon" src="./icon/arrow_forward.svg"/>
+                        <span>
+                            <a href='https://map.60hz.io/index.html' 
+                               target="_blank" style={{ textDecoration: "none", color: "#1D336A" }} 
+                            >
+                                햇빛바람지도 바로가기
+                                <img className="Business_Icon" src="./icon/arrow_forward.svg"/>
+                            </a>
                         </span>
-                    </a>
+                    
                 </article>
             </div>
-            <div className="Business_Monitoring_Box">
+            <div className="Business_Monitoring_Box" id="Product">
                 <article>
                     <div className='Business_Main_Box'>
                         <img src="./imoge/audio.svg"/>
@@ -42,15 +45,19 @@ function Business() {
                     전력 중개 사업, 발전량 예측과 같은 <br className='Business_Br_After'/>  <br className='Business_Br'/>
                     에너지 신사업에 참여하고 싶으신가요? <br className='Business_Br_After'/> <br className='Business_Br'/>
                     식스티헤르츠가 도와드리겠습니다.</h3>
-                    <a href='https://docs.google.com/forms/d/e/1FAIpQLSer94Hec0tHCNQ3FkYYtTA8S7DGU48LYX6GNvqTw8uDFIeWgA/viewform' 
-                           target="_blank" style={{ textDecoration: "none", color: "#1D336A" }} >
-                        <span>솔루션 문의하기
+                        <span>
+                        <a href='https://docs.google.com/forms/d/e/1FAIpQLSer94Hec0tHCNQ3FkYYtTA8S7DGU48LYX6GNvqTw8uDFIeWgA/viewform' 
+                           target="_blank" style={{ textDecoration: "none", color: "#1D336A" }} >솔루션 문의하기
                             <img className="Business_Icon" src="./icon/arrow_forward.svg"/>
+                        </a>
                         </span>
-                    </a>
                 </article>
                 <aside>
-                    <img  className="Business_Img" src="./ilerst/통관시.png"/>
+                    <div className='Business_Img_Container'>
+                        <div className='Business_Img_Box'>
+                            <div  className="Business_Img_png"></div>
+                        </div>
+                    </div>
                 </aside>
             </div>
         </section>
