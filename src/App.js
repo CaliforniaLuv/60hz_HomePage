@@ -52,8 +52,7 @@ function App() {
 
   return (
     <HashRouter>
- 
-      <ScrollToTop />
+      <ScrollToTop/>
       <div className="App">
         <Header handleModal={handleModal} handleAward={handleAward} 
                 handleModalBool={handleModalBool} MdCheck={MdCheck}/>

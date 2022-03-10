@@ -43,6 +43,11 @@
 
 .Master_PJ1 img {
     margin-bottom: -4px;
+    color: #EC5B44;;
+}
+
+.Magazine_Box_Svg {
+    filter: invert(47%) sepia(77%) saturate(1446%) hue-rotate(330deg) brightness(92%) contrast(101%);
 }
 
 .Master_PJ1 a:hover img {

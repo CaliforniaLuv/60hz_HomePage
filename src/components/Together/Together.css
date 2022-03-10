@@ -1,5 +1,5 @@
 .Together_Container {
-    height: 350px;
+    height: 430px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,6 +32,7 @@
     border-radius: 100px;
     cursor: pointer;
     transition: all .35s;
+    font-family: SUIT-SemiBold;
 }
 
 .Together_Container button:hover {

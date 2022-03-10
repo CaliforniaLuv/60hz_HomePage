@@ -15,7 +15,7 @@
 .Business_Youtube {
     box-shadow: rgb(0 0 0 / 20%) 10px 10px 20px;
     padding: 25px;
-    border-radius: 45px;
+    border-radius: 35px;
     width: 850px;
     height: 500px;
     overflow: hidden;
@@ -95,7 +95,7 @@
 }
 
 .Business_Img_Box {
-    border-radius: 25px;
+    border-radius: 15px;
     width: 800px;
     height: 500px;
     overflow: hidden;
@@ -109,7 +109,7 @@
     /* background-size: 150px; */
     background-image: url(/public//ilerst/통합관제시스템.jpg) ;
     transform: translate3d(0, 0, 0);
-    animation: moveSlideshow 15s linear infinite ;
+    animation: moveSlideshow 25s linear infinite ;
 }
 
 @keyframes moveSlideshow {

@@ -14,9 +14,9 @@ function Magazine() {
                         <img src="./icon/arrow_forward.svg"/>
                     </div>
                     <p>
-                        "재생에너지<br className='Magazine_Br'/> 
+                        "재생에너지
                         효율 높이는<br className='Magazine_Br_def'/>
-                        '가상발전소'...<br className='Magazine_Br'/>
+                        '가상발전소'...
                         선택 아닌 필수"
                     </p>
                 </a>
@@ -32,8 +32,8 @@ function Magazine() {
                     </div>
                     <p>
                         SKT, 현대차도 주목...<br/> 
-                        "재생에너지 가상발전소"<br className='Magazine_Br'/>
-                        만든 이사람
+                        "재생에너지 가상발전소"
+                        만든 <br className='Magazine_Br'/> 이사람
                     </p>
                 </a>
             </li>
@@ -47,8 +47,8 @@ function Magazine() {
                         <img src="./icon/arrow_forward.svg"/>
                     </div>
                     <p>
-                        재생에너지 시대,<br className='Magazine_Br'/> 
-                        수십만개<br className='Magazine_Br_def'/> '작은 발전소'<br className='Magazine_Br'/>
+                        재생에너지 시대,
+                        수십만개<br className='Magazine_Br_def'/> '작은 발전소
                         발전량 예측이 필수
                     </p>
                 </a>
@@ -63,8 +63,8 @@ function Magazine() {
                         <img src="./icon/arrow_forward.svg"/>
                     </div>
                     <p>
-                        '태양광 기여도'<br className='Magazine_Br'/> 
-                        논쟁 해결 <br className='Magazine_Br_def'/> AI 등장..<br className='Magazine_Br'/>
+                        '태양광 기여도' 
+                        논쟁 해결 <br className='Magazine_Br_def'/> AI 등장..
                         '식스티헤르츠' 개발
                     </p>
                 </a>
@@ -80,8 +80,8 @@ function Magazine() {
                     </div>
                     <p>
                         식스티헤르츠,<br/> 
-                        임팩트투자사와<br className='Magazine_Br'/>
-                        대기업 펀드로부터 투자유치
+                        임팩트투자사와&nbsp;
+                        대기업 펀드로부터<br className='Magazine_Br'/> 투자유치
                     </p>
                 </a>
             </li>

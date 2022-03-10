@@ -27,6 +27,7 @@
     border-radius: 100px;
     cursor: pointer;
     transition: all .35s;
+    font-family: 'SUIT-SemiBold';
 }
 
 .Home_Button:hover {
@@ -69,7 +70,7 @@
 }
 
 .Home_Infor_Box > div:nth-child(1) {
-    padding: 200px 0 70px 0;    
+    padding: 180px 0 70px 0;    
 }
 
 .Home_Infor_Box div:nth-child(1) h1 {
@@ -83,13 +84,13 @@
 }
 
 .Home_Infor_Box > div:nth-child(3)  {
-    padding-bottom: 150px;
+    padding-bottom: 180px;
 }
 
 .Home_Company_Box > div:nth-child(1) {
     width: 80%;
     border-top: 1px solid rgb(137, 137, 137);
-    margin: 0 auto 200px auto;
+    margin: 0 auto 180px auto;
 }
 
 .Home_Company_Box > div:nth-child(2) h1 {
@@ -109,7 +110,7 @@
 }
 
 .Home_Partners_Box {
-    padding: 150px 0 250px 0;
+    padding: 80px 0 180px 0;
     font-size: 27px;  
 }
 
