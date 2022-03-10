@@ -56,11 +56,11 @@ function Footer() {
             </section>
             <section className='Footer_Company_Box'>
                 <div>
-                    <span className='Footer_Company_name'>
+                    <span style={{ fontFamily: "SUIT-SemiBold"}}>
                         식스티헤르츠 주식회사
                     </span>
                     <span>
-                        | 대표: 김종규
+                    &nbsp;|&nbsp; 대표: 김종규
                     </span>
                 </div>
                 <div>

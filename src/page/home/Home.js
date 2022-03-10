@@ -5,7 +5,7 @@ import Magazine from '../../components/Home/magazine/Magazine'
 import Company from '../../components/Home/Company/Compony'
 import { HashLink } from 'react-router-hash-link';
 
-function Home({handleParterY, partnerY}) {
+function Home() {
 
     
     return(

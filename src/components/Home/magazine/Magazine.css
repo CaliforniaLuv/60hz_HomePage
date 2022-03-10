@@ -1,11 +1,13 @@
 .Magazine_Container {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 50px;
+    gap: 45px;
+    place-items: center;
 }
 
 .Magazine_Container li {
     border-bottom: 1px solid #000;
+    width: 84%;
 }
 
 .Magazine_Br {
@@ -45,10 +47,16 @@
   
 
 .Magazine_Box p {
-    font-size: 25px;
+    font-size: 20px;
     text-align: left;
-    margin-bottom: 50px;
     line-height: 35px;
+    height: 130px;
+}
+
+@media screen and (max-width: 1500px) {
+    .Magazine_Container {
+        gap: 45px 5px;
+    }
 }
 
 

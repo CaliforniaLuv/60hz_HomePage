@@ -38,7 +38,26 @@
 
 .Header_Nav_Box div {
     margin-left: 115px;
+    /* height: 30px; */
+    /* padding-top: 4px; */
+    /* margin-top: 4px; */
+    width: 90px;
 }
+
+.Header_Nav_Box div:nth-child(n+2){
+    height: 30px;
+    margin-top: 4px;
+}
+
+.Header_Nav_Box div:hover:nth-child(n+2){
+    border-bottom: 2px solid #000;
+}
+
+.Header_Nav_Box div:hover:nth-last-child(1){
+    border-bottom: 2px solid #EC5B44;
+}
+
+
 
 .Header_Nav_Box div:nth-child(1) {
     width: 130px;
@@ -57,8 +76,12 @@
     cursor: pointer;
 }
 
-@media screen  {
-    
+.Header_Nav_Box div:nth-last-child(1) p{
+    color: #EC5B44;
+}
+
+.Header_Selected {
+    font-family: "SemiBold";
 }
 
 @media screen and (max-width: 1300px) {

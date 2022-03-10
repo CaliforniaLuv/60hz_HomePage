@@ -45,12 +45,6 @@
         width: 740px;
     }
 
-    /* .Partner_Container div span {
-        display: flex;
-        align-items: center;
-        position: static;
-    } */
-
     .Partner_Container div {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -90,6 +84,10 @@
     
     .Partner_Box img {
         height: 50px;
+    }
+
+    .Partner_Box span {
+        font-size: 15px;
     }
 
     .Partner_Box img.Partner_Box_Mobile_Inups {

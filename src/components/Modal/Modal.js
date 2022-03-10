@@ -1,13 +1,20 @@
-import { useState } from 'react'
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import './Modal.css'
 
-function Modal({Modal_Hiden, handleModal}) {
+function Modal({Modal_Hiden, handleModal, handleModalBool, handleMdCheck}) {
 
-    const [modal_close, Modal_close] = useState('')
+    const [click, setClick] = useState(0)
 
-    const openClick = () => {
+    const openClick = (value) => {
         handleModal('Modal_Close')
+        handleModalBool(false)
+        handleMdCheck(value)
     }
+
+
+
+    
 
     return(
         <section className={`${Modal_Hiden} Modal_Container`}>
@@ -16,10 +23,30 @@ function Modal({Modal_Hiden, handleModal}) {
                 <img onClick={() => openClick()} src="./icon/close.svg"/>
             </div>
             <ul className='Modal_List_Box'>
-                <li>햇빛바람지도</li>
-                <li>ABOUT</li>
-                <li>BUSINESS</li>
-                <li>CAREER</li>
+                 <a href='https://map.60hz.io/index.html' 
+                    target="_blank" style={{ textDecoration: "none", color: "#000" }} 
+                    onClick={() => openClick()}
+                >
+                    <li>햇빛바람지도</li>
+                </a>
+                <Link to="/about"
+                      style={{ textDecoration: "none", color: "black" }}
+                      onClick={() => openClick("Header_About")}
+                >
+                    <li>ABOUT</li>
+                </Link>
+                <Link to="/business"
+                      style={{ textDecoration: "none", color: "black" }}  
+                      onClick={() => openClick("Header_Business")}   
+                >
+                    <li>BUSINESS</li>
+                </Link>
+                <Link to="/career"
+                      style={{ textDecoration: "none", color: "black" }}
+                      onClick={() => openClick("Header_Career")}
+                >
+                    <li>CAREER</li>
+                </Link>
             </ul>
         </section>
     )

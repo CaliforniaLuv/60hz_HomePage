@@ -39,17 +39,11 @@
 .Footer_Company_Box {
     text-align: left;
     line-height: 25px;
-    
 }
 
 .Footer_Company_Box span {
     font-family: SUIT-Thin;
 }
-
-.Footer_Company_name {   
-    font-family: SUIT-SemiBold;
-}
-
 
 @media screen and (max-width: 1400px) {
     .Footer_Container {

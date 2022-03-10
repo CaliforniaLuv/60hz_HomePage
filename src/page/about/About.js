@@ -3,24 +3,8 @@ import Master_Plan from '../../components/About/Master_Plan/Master_Plan';
 import Awards from '../../components/About/Award/Award'
 import Partner from '../../components/About/Partner/Partner';
 import Member from '../../components/About/Member/Member';
-import { useEffect, useState } from 'react';
 
-function About({award, partnerY, handleParterY}) {
-    const [data, setData] = useState(false)
-    
-    useEffect(() => {
-      return partnerY ? partnerFunc() : null
-    }, [partnerY])
-
-    function partnerFunc() {
-        setData(document.querySelector('.About_Partner_Box').getBoundingClientRect().y)
-        // console.log(data)
-    }
-
-    useEffect(() => {
-        handleParterY(data)
-    }, [data])
-    
+function About({award}) {
     
     return(
         <section>

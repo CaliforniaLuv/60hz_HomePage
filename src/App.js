@@ -18,10 +18,26 @@ function App() {
 
   // 태블릿/모바일 버전 모달(Header 메뉴) 상태 관리
   const [modal, setModal] = useState("Modal_Hiden")
+  const [modalBool, setModalBool] = useState(true)
 
-   // 모달 ClassName 제어 ("" / Modal_Hiden) 
-   const handleModal = (value) => {
+  // 모달 ClassName 제어 ("" / Modal_Hiden) 
+  const handleModal = (value) => {
     setModal(value)
+  }
+
+  // 모달 x축 반응형에 따라 애니메이션 효과가 계속 보이는 관계로 settimeout을 통해
+  // 직접 bool 기준으로 0.1초 사이에 제거함
+  const handleModalBool = (value) => {
+    setTimeout(() => {
+      setModalBool(value)
+    }, 100);
+  }
+
+  // 
+  const [MdCheck, setMdCheck] = useState("")
+
+  const handleMdCheck = (value) => {
+    setMdCheck(value)
   }
 
 
@@ -34,31 +50,24 @@ function App() {
   }
 
 
-  // props
-  const [partnerY, setParterY] = useState(0)
-
-  // 
-  const handleParterY = (e) => {
-    setParterY(e)
-    console.log("app.js에서 찍힌거",e)
-  }
-
   return (
     <HashRouter>
  
-      <ScrollToTop partnerY={partnerY}/>
+      <ScrollToTop />
       <div className="App">
-        <Header handleModal={handleModal} handleAward={handleAward}/>
+        <Header handleModal={handleModal} handleAward={handleAward} 
+                handleModalBool={handleModalBool} MdCheck={MdCheck}/>
         <Routes>
-          <Route exact path="/" element={<Home handleParterY={handleParterY} partnerY={partnerY}/>} />
-          <Route  path="/about" element={<About award={award} partnerY={partnerY} handleParterY={handleParterY}/>} />
+          <Route exact path="/" element={<Home/>} />
+          <Route  path="/about" element={<About award={award} />} />
           <Route  path="/business" element={<Business/>} />
           <Route  path="/career" element={<Career/>} />
           <Route path="*" element={<NotFound/>} />
         </Routes>
         <Together/>
         <Footer/>
-        <Modal Modal_Hiden={modal} handleModal={handleModal}/>
+        {modalBool ? <Modal Modal_Hiden={modal} handleModal={handleModal} 
+              handleModalBool={handleModalBool} handleMdCheck={handleMdCheck}/> : null}
       </div>
     </HashRouter>
   );

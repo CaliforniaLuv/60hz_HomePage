@@ -1,14 +1,42 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from "react-router-dom";
 import './Header.css'
 
-function Header({handleModal, handleAward}) {
+function Header({handleModal, handleAward, handleModalBool, MdCheck}) {
 
     const [scrollY, setScrollY] = useState('')
+    const [select, setSelect] = useState('')
+    // Header 상단 메뉴 Click에 의한 state 렌더링 관리(useEffect)
+    const [click, setClick] = useState(0)
 
-    const openClick = () => {
-        handleModal("")
+
+    useEffect(() => {
+        if(MdCheck !== "") {
+            setClick(click+1)
+        }
+    }, [MdCheck])
+    
+    const openClick = (value) => {
+
+        if(value === "check" ) {
+            handleModalBool(true)
+            handleModal("") 
+        }
+        setClick(click+1)
+        window.localStorage.setItem("selected", value)
     }
+
+
+
+    // 헤더 메뉴 렌더링 effect 발동 시
+    useEffect(() => {
+        const data = window.localStorage.getItem("selected")
+        if(data !== 'check') {
+            setSelect(data)
+        } else if(MdCheck) {
+            setSelect(MdCheck)
+        }
+    },[click])
 
     // // 스크롤 제어
     window.onscroll = () => {
@@ -45,10 +73,11 @@ function Header({handleModal, handleAward}) {
                 <div>
 
                     <a href="/"
+                       onClick={() => openClick(null)}
                     >
                         <img src="./logo/60hz.svg"/>
                     </a>
-                    <img onClick={() => openClick()} src="./icon/menu.svg"/>
+                    <img  onClick={() => openClick("check")} src="./icon/menu.svg"/>
                 </div>
                 <nav className="Header_Nav_Box">
                     <div>
@@ -60,8 +89,11 @@ function Header({handleModal, handleAward}) {
                     <div>
                         <Link to="/about"
                             style={{ textDecoration: "none", color: "black" }}
+                            onClick={() => openClick("Header_About")}
                         >
-                            <p>
+                            <p style={{fontFamily: 
+                                select === "Header_About" ? "SUIT-SemiBold" : ""}}
+                            >
                                 ABOUT
                             </p>
                         </Link>
@@ -69,8 +101,10 @@ function Header({handleModal, handleAward}) {
                     <div>
                         <Link to="/business"
                             style={{ textDecoration: "none", color: "black" }}
+                            onClick={() => openClick("Header_Business")}
                         >
-                            <p>
+                            <p style={{fontFamily: 
+                                select === "Header_Business" ? "SUIT-SemiBold" : ""}}>
                                 BUSINESS
                             </p>
                         </Link>
@@ -78,8 +112,10 @@ function Header({handleModal, handleAward}) {
                     <div>
                         <Link to="/career"
                             style={{ textDecoration: "none", color: "black" }}
+                            onClick={() => openClick("Header_Career")}
                         >
-                            <p>
+                            <p style={{fontFamily: 
+                                select === "Header_Career" ? "SUIT-SemiBold" : ""}}>
                             CAREER
                             </p>
                         </Link>
