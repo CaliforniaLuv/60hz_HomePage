@@ -13,6 +13,8 @@ function Header({handleModal, handleAward, handleModalBool, MdCheck}) {
     useEffect(() => {
         if(MdCheck !== "") {
             setClick(click+1)
+        } else if(MdCheck === "home") {
+            openClick(MdCheck)
         }
     }, [MdCheck])
     
@@ -86,7 +88,7 @@ function Header({handleModal, handleAward, handleModalBool, MdCheck}) {
                             햇빛바람지도
                         </a>
                     </div>
-                    <div>
+                    <div style={{width: "65px"}}>
                         <Link to="/about"
                             style={{ textDecoration: "none", color: "black" }}
                             onClick={() => openClick("Header_About")}
@@ -98,7 +100,7 @@ function Header({handleModal, handleAward, handleModalBool, MdCheck}) {
                             </p>
                         </Link>
                     </div>
-                    <div>
+                    <div style={{width: "95px"}}>
                         <Link to="/business"
                             style={{ textDecoration: "none", color: "black" }}
                             onClick={() => openClick("Header_Business")}
@@ -109,7 +111,7 @@ function Header({handleModal, handleAward, handleModalBool, MdCheck}) {
                             </p>
                         </Link>
                     </div>
-                    <div>
+                    <div style={{width: "77px"}}>
                         <Link to="/career"
                             style={{ textDecoration: "none", color: "black" }}
                             onClick={() => openClick("Header_Career")}

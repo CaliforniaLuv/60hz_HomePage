@@ -1,7 +1,7 @@
 .Master_Container {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 20px 30px;
+    gap: 60px 30px;
     width: 1300px;
 }
 
@@ -16,6 +16,16 @@
 
 .Master_Container > li > h3 {
     font-family: SUIT-Thin;
+    
+}
+
+.Master_Container > li:nth-child(1) > h3 {
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.Master_Container > li > h3 { 
+    line-height: 27px;
 }
 
 .Master_Box h1 {
@@ -23,11 +33,11 @@
     text-align: left;
     padding-bottom: 10px;
     font-family: SUIT-Thin;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .Master_Box h3 {
-    font-size: 23px;
+    font-size: 19px;
 }
 
 .Master_Box h3:nth-child(2) {
@@ -44,10 +54,6 @@
 .Master_PJ1 img {
     margin-bottom: -4px;
     color: #EC5B44;;
-}
-
-.Magazine_Box_Svg {
-    filter: invert(47%) sepia(77%) saturate(1446%) hue-rotate(330deg) brightness(92%) contrast(101%);
 }
 
 .Master_PJ1 a:hover img {
@@ -67,7 +73,7 @@
 }
 
 .Master_PJ2 {
-    margin-top: 10px;
+    margin-top: 13px;
     font-family: SUIT-Regulur;
     color: #EC5B44;
     font-size: 19px;
@@ -88,9 +94,30 @@
     display: none;
 }
 
+@media screen and (max-width: 1600px) { 
+    .Master_Container {     
+        gap: 60px 10px;
+        width: 1200px;
+    }
+
+
+    .Master_Container > li:nth-child(1) > h1 {
+        font-size: 35px;
+    }
+
+    .Master_Box h3 {
+        font-size: 20px;
+    }
+
+    .Master_Container li {
+        width: 340px;
+    }
+}
+
 @media screen and (max-width: 1280px) {
     .Master_Container {
-        width: 850px;
+        width: 100%;
+        gap: 45px 30px;
     }
 
     .Master_Container > li:nth-child(1) > h1 {
@@ -99,6 +126,10 @@
 
     .Master_Container > li:nth-child(1) > h3 {
         font-size: 15px;
+    }
+
+    .Master_Container li {
+        width: 260px;
     }
 
     .Master_PJ1 {
@@ -149,9 +180,12 @@
 
 @media screen and (max-width: 680px) {
 
-    .Master_Container {
-        
+    .Master_Container {   
         width: 400px;
+    }
+
+    .Master_Container li:nth-child(n + 2) {
+        width: 170px;
     }
 
     .Master_Container > li:nth-child(1) > h1 {

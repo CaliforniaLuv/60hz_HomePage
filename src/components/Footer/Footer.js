@@ -11,7 +11,7 @@ function Footer() {
                         <Link
                             to='#'
                             onClick={(e) => {
-                                window.location = "mailto:hello@60hz.io";
+                                window.location = "mailto:admin@60hz.io";
                                 e.preventDefault();
                             }}
                             style={{ textDecoration: "none", color: "black"}}

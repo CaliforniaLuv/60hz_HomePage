@@ -112,6 +112,27 @@
     color: #FFF;
 }
 
+@media screen and (max-width: 1280px) { 
+
+    .Hire_Back_Box h2 {
+        font-size: 27px;
+    }
+
+    .Hire_Front_Box h2 {
+        font-size: 27px;
+    }
+
+    .Hire_Arrow_Back {
+        width: 27px;
+        height: 27px;
+    }
+
+    .Hire_Arrow_Front {
+        width: 27px;
+        height: 27px;
+    }
+}
+
 @media screen and (max-width: 1075px) {
     .Hire_Text-Box h3 {
         font-size: 25px;
@@ -172,5 +193,31 @@
 
     .Hire_Text-Box p {
         font-size: 15px;
+    }
+
+    .Career_Hire_Box h1 {
+        font-size: 23px;
+    }
+
+    .Hire_Back_Box h2 {
+        font-size: 18px;
+    }
+
+    .Hire_Front_Box h2 {
+        font-size: 18px;
+    }
+
+    .Hire_Arrow_Back {
+        width: 15px;
+        height: 15px;
+    }
+
+    .Hire_Arrow_Front {
+        width: 15px;
+        height: 15px;
+    }
+
+    .Hire_Text-Box h3 {
+        font-size: 17px;
     }
 }

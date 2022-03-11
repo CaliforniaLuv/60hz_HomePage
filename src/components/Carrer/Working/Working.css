@@ -51,6 +51,10 @@
         gap: 60px;
     }
 
+    .Working_Main {
+        font-size: 37px;
+    }
+
     .Working_Text_Box ul > h3 {
         font-size: 25px;
     }
@@ -111,20 +115,20 @@
 
 
     .Working_Text_Box ul > h3 {
-        font-size: 30px;
+        font-size: 27px;
     }
 
     .Working_Text_Box ul li {
-        font-size: 23px;
+        font-size: 20px;
     }
 
     .Working_Text_Box span { 
-        font-size: 23px;
+        font-size: 20px;
     }
     
     .Working_Text_Box img{
-        width: 90px;
-        height: 85px;
+        width: 70px;
+        height: 65px;
     }
 }
 
@@ -139,22 +143,7 @@
     }
 
 
-    .Working_Text_Box ul > h3 {
-        font-size: 28px;
-    }
-
-    .Working_Text_Box ul li {
-        font-size: 23px;
-    }
-
-    .Working_Text_Box span { 
-        font-size: 23px;
-    }
     
-    .Working_Text_Box img{
-        width: 90px;
-        height: 85px;
-    }
 }
 
 
@@ -165,24 +154,24 @@
     }
 
     .Working_Main {
-       font-size: 30px;
+       font-size: 23px;
     }
 
 
     .Working_Text_Box ul > h3 {
-        font-size: 25px;
+        font-size: 23px;
     }
 
     .Working_Text_Box ul li {
-        font-size: 20px;
+        font-size: 17px;
     }
 
     .Working_Text_Box span { 
-        font-size: 20px;
+        font-size: 17px;
     }
     
     .Working_Text_Box img{
-        width: 75px;
-        height: 70px;
+        width: 50px;
+        height: 45px;
     }
 }

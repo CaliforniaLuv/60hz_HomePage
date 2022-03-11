@@ -51,7 +51,7 @@ function Home() {
                     <a href="https://blue-ocarina-b66.notion.site/7521f6afa92c418080a84bfd148b74ea" 
                        target="_blank"
                     >
-                        <button className='Home_Button'>더보기</button>
+                        <button className='Home_Button_More'>더보기</button>
                     </a>
                 </div>
                 <div className='Home_Company_Box'>

@@ -1,13 +1,13 @@
 .Magazine_Container {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 45px;
+    gap: 45px 0;
     place-items: center;
 }
 
 .Magazine_Container li {
     border-bottom: 1px solid #000;
-    width: 84%;
+    width: 85%;
 }
 
 .Magazine_Br {
@@ -22,6 +22,10 @@
 .Magazine_Box div span {
     color: rgb(102, 102, 102);
     font-size: 15px;
+}
+
+.Magazine_Box_Svg {
+    filter: invert(47%) sepia(77%) saturate(1446%) hue-rotate(330deg) brightness(92%) contrast(101%);
 }
 
 .Magazine_Box div img {
@@ -47,7 +51,7 @@
   
 
 .Magazine_Box p {
-    font-size: 20px;
+    font-size: 19px;
     text-align: left;
     line-height: 35px;
     height: 130px;

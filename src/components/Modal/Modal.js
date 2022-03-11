@@ -1,10 +1,7 @@
-import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import './Modal.css'
 
 function Modal({Modal_Hiden, handleModal, handleModalBool, handleMdCheck}) {
-
-    const [click, setClick] = useState(0)
 
     const openClick = (value) => {
         handleModal('Modal_Close')
@@ -12,14 +9,14 @@ function Modal({Modal_Hiden, handleModal, handleModalBool, handleMdCheck}) {
         handleMdCheck(value)
     }
 
-
-
-    
-
     return(
         <section className={`${Modal_Hiden} Modal_Container`}>
             <div className='Modal_Main_Box'>
-                <img src="./logo/60hz.svg"/>
+                <Link to="/" style={{marginTop: '10px'}}
+                      onClick={() => openClick('home')}
+                >
+                    <img src="./logo/60hz.svg"/>
+                </Link>
                 <img onClick={() => openClick()} src="./icon/close.svg"/>
             </div>
             <ul className='Modal_List_Box'>

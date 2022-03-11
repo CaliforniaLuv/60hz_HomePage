@@ -6,6 +6,7 @@
     width: 100%;
     height: 100px;
     margin-top: 60px;
+    margin-bottom: 15px;
 }
 
 .Carousel_Container ul{
@@ -68,6 +69,11 @@
 }
 
 @media screen and (max-width: 770px) {
+
+    .Carousel_Container {
+        margin-top: 70px;
+        margin-bottom: 15px;
+    }
 
     .Carousel_Container li img {
         height: 30px;

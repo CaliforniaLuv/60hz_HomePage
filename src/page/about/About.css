@@ -1,5 +1,5 @@
 .About_Intro_Box {
-    padding-top: 250px;
+    padding: 250px 0 350px 0;
     background: #F5F8FA;
 }
 
@@ -33,15 +33,20 @@
 }
 
 .About_Plan_Box {
-    padding: 100px 0;
+    padding: 100px;
     display: flex;
-    justify-content: center;  
+    justify-content: center; 
+    position: absolute;
+    left: 50%;
+    bottom: -125%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
 }
 
 .About_Award_Box {
     display: flex;
     justify-content: center;
-    margin: 100px 0;
+    margin: 450px 0 100px 0;
 }
 
 .About_Partner_Box {
@@ -69,10 +74,20 @@
     font-size: 40px;
 }
 
+@media screen and (max-width: 1600px) {
+    .About_Plan_Box {
+        padding: 100px 30px;           
+    }
+}
+
 @media screen and (max-width: 1280px) {
+    
+    .About_Intro_Box {
+        padding: 230px 0 250px 0;
+    }
+
     .About_Intro_Box p {
-        font-size: 37px;
-        margin-bottom: 25px;
+        font-size: 37px;   
     }
 
     .About_Intro_Box span {
@@ -83,9 +98,23 @@
     .About_Intro_Img img {
         height: 450px;
     }
+
+    .About_Plan_Box {
+        bottom: -105%;
+    }
+
+    .About_Award_Box {
+        margin: 350px 0 0 0;
+    }
+        
 }
 
 @media screen and (max-width: 980px) {
+
+    .About_Intro_Box {
+        padding: 300px 0 140px 0
+    }
+
     .About_Img_Desk {
         display: none;
     }
@@ -98,6 +127,25 @@
         display: block;
         width: 650px;
     }
+
+    .About_Plan_Box {
+        bottom: -105%;
+    }
+
+    .About_Award_Box {
+        margin: 250px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 935px) {
+
+    .About_Plan_Box {
+        bottom: -160%;
+    }
+
+    .About_Award_Box {
+        margin: 650px 0 0 0;
+    }
 }
 
 @media screen and (max-width: 770px) {
@@ -109,12 +157,56 @@
         display: none;
     }
 
+    .About_Intro_Box {
+        padding: 150px 0 140px 0;
+    }
+
     .About_Intro_Box p {
         line-height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .About_Partner_Box > div:nth-child(1) h1 {
+        font-size: 35px;
+    }
+
+    .About_Partner_Box > div:nth-child(1) > span {
+        font-size: 15px;
+    }    
+
+    .About_Member_Box > h1 {
+        font-size: 35px;
     }
 
     .About_Intro_Img img {
         width: 470px;
         height: 420px;
+    }
+
+    .About_Award_Box {
+        margin: 750px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .About_Plan_Box {
+        bottom: -150%;
+    }
+
+    .About_Intro_Box p {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    .About_Partner_Box > div:nth-child(1) h1 {
+        font-size: 25px;
+    }
+
+    .About_Member_Box > h1 {
+        font-size: 25px;
+    }
+
+    .About_Award_Box {
+        margin: 750px 0 0 0;
     }
 }

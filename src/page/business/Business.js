@@ -19,7 +19,7 @@ function Business() {
                     <h3>약 8만여개의 태양광, 풍력 발전소를 한 눈에 <br className='Business_Br'/> 확인해보세요.
                     <br className='Business_Br_After'/> AI기술로 미래 발전량을 예측하고, <br/>
                     기상 정보를 다양한 방식으로 시각화하였습니다. <br/>
-                    공공데이터 활용 우수라례로 대통령상을  <br className='Business_Br'/> 수상하였습니다.</h3>
+                    공공데이터 활용 우수사례로 대통령상을  <br className='Business_Br'/> 수상하였습니다.</h3>
                         <span>
                             <a href='https://map.60hz.io/index.html' 
                                target="_blank" style={{ textDecoration: "none", color: "#1D336A" }} 

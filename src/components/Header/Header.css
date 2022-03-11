@@ -38,10 +38,6 @@
 
 .Header_Nav_Box div {
     margin-left: 115px;
-    /* height: 30px; */
-    /* padding-top: 4px; */
-    /* margin-top: 4px; */
-    width: 90px;
 }
 
 .Header_Nav_Box div:nth-child(n+2){
@@ -49,18 +45,20 @@
     margin-top: 4px;
 }
 
-.Header_Nav_Box div:hover:nth-child(n+2){
+.Header_Nav_Box div:hover:nth-child(n+2) p{
     border-bottom: 2px solid #000;
+    width: 100%;
 }
 
-.Header_Nav_Box div:hover:nth-last-child(1){
+.Header_Nav_Box div:hover:nth-last-child(1) p{
     border-bottom: 2px solid #EC5B44;
+    width: 100%;
 }
 
 
 
 .Header_Nav_Box div:nth-child(1) {
-    width: 130px;
+    width: 140px;
     height: 40px;
     display: flex;
     justify-content: center;
@@ -108,7 +106,13 @@
     .Header_Nav_Box div {
         margin-left: 5%;
     }
-   
+}
+
+@media screen and (max-width: 1080px) {
+    .Header_Nav_Box {
+  
+        font-size: 17px;
+    }
 }
 
 @media screen and (max-width: 770px) {
