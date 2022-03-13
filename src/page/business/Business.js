@@ -4,12 +4,14 @@ function Business() {
     return(
         <section className="Business_Container">
             <div className="Business_SunMap_Box">
-                <aside>
-                    <iframe className='Business_Youtube' src="https://www.youtube-nocookie.com/embed/yGeiyZLHnlI?
-                        amp;playlist=yGeiyZLHnlI&loop=1&autoplay=1&mute=1&controls=0&modestbranding=1" 
-                        title="햇빛바람지도 미리보기" frameBorder="0" 
-                        allowFullScreen>
-                    </iframe>
+                <aside className='Business_Youtube_Box'>
+                    <div  className='Business_Youtube_Line'>
+                        <iframe className="Business_Youtube" src="https://www.youtube-nocookie.com/embed/yGeiyZLHnlI?
+                            amp;playlist=yGeiyZLHnlI&loop=1&autoplay=1&mute=1&controls=0&modestbranding=1" 
+                            title="햇빛바람지도 미리보기" frameBorder="0" 
+                            allowFullScreen>
+                        </iframe>
+                    </div>
                 </aside>
                 <article>
                     <div className='Business_Main_Box'>
@@ -35,8 +37,8 @@ function Business() {
                 <article>
                     <div className='Business_Main_Box'>
                         <img src="./imoge/audio.svg"/>
-                        <div>
-                            <h1>재생에너지</h1>
+                        <div className="Business_Monitoring_Text">
+                            <h1>재생에너지&nbsp;</h1>
                             <h1>통합관제시스템</h1>
                         </div>
                     </div>

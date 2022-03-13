@@ -63,7 +63,6 @@ function Master_Plan() {
                 <h3>1-4를 해외에서 반복시킨다.</h3>
             </li>
         </ul>
-        
     )
 }
 

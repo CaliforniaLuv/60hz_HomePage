@@ -56,3 +56,9 @@
         grid-template-columns: repeat(2,1fr);
     }
 }
+
+@media screen and (max-width: 420px) {
+    .Company_Container {
+        margin-top: 60px;
+    }
+}

@@ -12,6 +12,8 @@ import Career from './page/career/Career';
 import ScrollToTop from './router/ScrollToTop';
 import NotFound from './router/NotFound';
 
+
+
 import { useState } from 'react';
 
 function App() {
@@ -23,6 +25,7 @@ function App() {
   // 모달 ClassName 제어 ("" / Modal_Hiden) 
   const handleModal = (value) => {
     setModal(value)
+    
   }
 
   // 모달 x축 반응형에 따라 애니메이션 효과가 계속 보이는 관계로 settimeout을 통해
@@ -67,6 +70,7 @@ function App() {
         <Footer/>
         {modalBool ? <Modal Modal_Hiden={modal} handleModal={handleModal} 
               handleModalBool={handleModalBool} handleMdCheck={handleMdCheck}/> : null}
+
       </div>
     </HashRouter>
   );

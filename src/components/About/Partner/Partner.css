@@ -113,3 +113,60 @@
         margin-bottom: 10px;
     }
 }
+
+@media screen and (max-width: 420px) { 
+    
+
+    .Partner_Box span {
+        font-size: 15px;
+        width: 140px;
+    }
+
+    .Partner_Box img {
+        height: 37px;
+    }
+
+    .Partner_Box {
+        width: 90%;
+    }
+
+    .About_Partner_Box > div:nth-child(1) h1 {
+        margin-bottom: 8px;
+    }
+
+    .Partner_Box img.Partner_Box_Mobile_Inups {
+        height: 20px;
+    }
+
+    .Partner_Box_Mobile {
+        width: 60px;
+    }
+    
+}
+
+
+@media screen and (max-width: 370px) { 
+    
+
+    .Partner_Box span {
+        font-size: 13px;
+        width: 130px;
+    }
+
+    .Partner_Box img {
+        height: 30px;
+    }
+
+    .Partner_Box {
+        width: 90%;
+    }
+
+    .Partner_Box img.Partner_Box_Mobile_Inups {
+        height: 15px;
+    }
+
+    .Partner_Box_Mobile {
+        width: 50px;
+    }
+    
+}

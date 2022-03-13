@@ -36,3 +36,10 @@
         line-height: 30px;
     }
 }
+
+@media screen and (max-width: 420px) {
+    .Member_Container h3 {
+        font-size: 15px;
+        line-height: 25px;
+    }
+}

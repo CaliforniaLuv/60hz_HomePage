@@ -1,70 +1,43 @@
 .Carousel_Container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    overflow: hidden;
-    width: 100%;
-    height: 100px;
-    margin-top: 60px;
-    margin-bottom: 15px;
-}
-
-.Carousel_Container ul{
-    height:calc(100% * 4);
-    animation:slide 15s infinite;
-    font-size: 26px;
-}
-
-.Carousel_Container li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height:calc(100% / 4);
-    line-height: 160px;
-    font-size: 20px;
+    height: 110px;
+    margin-top: 70px;
 }
 
 .Carousel_Br {
     display: none;
 }
 
-@keyframes slide {
-    0% {margin-top:0px;}
-    10% {margin-top:0px;}
-    25% {margin-top:-100px;}
-    35% {margin-top:-100px;}
-    50% {margin-top:-200px;}
-    60% {margin-top:-200px;}
-    75% {margin-top:-300px;}
-    85% {margin-top:-300px;}
-    100% {margin-top:0;}
-  }
-
-.Carousel_Container li img{
+.Carousel_img {
     height: 50px;
     margin-right: 30px;
 }
 
-.Carousel_Container li:nth-child(4) img{
-    width: 195px;
-    height: 50px;
-    margin-right: 30px;
-    margin-bottom: 7px;
+
+/* .slick-vertical .slick-slide {
+    margin-bottom: 50px;
+} */
+.Carousel_li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    font-size: 20px;
 }
+
 
 @media screen and (max-width: 1280px) {
-    .Carousel_Container li img {
-        height: 35px;
+    .Carousel_img {
+        height: 40px;
     }
 
-    .Carousel_Container li:nth-child(4) img {
-        
-        width: 130px;
-        height: 50px;
+    .Carousel_li {
+        font-size: 18px;
     }
+}
 
-    .Carousel_Container ul{
-        font-size: 20px;
+@media screen and (max-width: 820px) {
+    .Carousel_Container {
+        margin-top: 30px;
     }
 }
 
@@ -72,67 +45,62 @@
 
     .Carousel_Container {
         margin-top: 70px;
-        margin-bottom: 15px;
-    }
-
-    .Carousel_Container li img {
-        height: 30px;
-        margin-right: 0px;
-    }
-
-    .Carousel_Container li:nth-child(4) img {
-        margin-top: 20px;
-        width: 130px;
-        height: 30px;
+        height: 150px;
     }
 
     .Carousel_Br {
         display: block;
     }
 
-    .Carousel_Container li {
-        flex-direction: column;
-        line-height: 25px;
-        padding-bottom: 40px;
-        font-size: 15px;
+    .Carousel_li {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;   
+        margin-top: 20px;
     }
 
-    @keyframes slide {
-        0% {margin-top:10px;}
-        10% {margin-top:10px;}
-        25% {margin-top:-90px;}
-        35% {margin-top:-90px;}
-        50% {margin-top:-190px;}
-        60% {margin-top:-190px;}
-        75% {margin-top:-290px;}
-        85% {margin-top:-290px;}
-        100% {margin-top:10px;}        
+    .Carousel_img {
+        height: 35px;
+        margin-right: 0px;
+        margin-bottom: 7px;
     }
+
+
 }
 
 @media screen and (max-width: 500px) {
-    .Home_Intro_Box {
-        height: 780px;
+    .Carousel_img {
+        height: 30px;
     }
 
-    .Carousel_Container ul{
-        font-size: 15px;
+    .Carousel_li {
+       font-size: 15px;
     }
 
-    .Carousel_Container li img{
-        width: 130px;
+    .Carousel_Container {
+        margin-top: 50px;
+        height: 140px;
+    }
+}
+
+@media screen and (max-width: 420px) { 
+    .Carousel_Container {
+        margin-top: 40px;
+        height: 140px;
+    }
+}
+
+@media screen and (max-width: 375px) { 
+    .Carousel_img {
         height: 25px;
     }
 
-    @keyframes slide {
-        0% {margin-top:10px;}
-        10% {margin-top:10px;}
-        25% {margin-top:-90px;}
-        35% {margin-top:-90px;}
-        50% {margin-top:-190px;}
-        60% {margin-top:-190px;}
-        75% {margin-top:-290px;}
-        85% {margin-top:-290px;}
-        100% {margin-top:10px;}        
+    .Carousel_li {
+       font-size: 12px;
+    }
+
+    .Carousel_Container {
+        margin-top: 30px;
+        height: 130px;
     }
 }

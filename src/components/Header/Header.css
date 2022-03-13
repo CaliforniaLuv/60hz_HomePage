@@ -144,3 +144,23 @@
         cursor: pointer;
     }
 }
+
+
+@media screen and (max-width: 420px) { 
+    .Header_Container {
+        height: 55px;
+    }
+    
+    .Header_Container a:nth-child(1){
+        display: flex;
+    }
+    
+    .Header_Container img:nth-child(1){
+        width: 90px;
+    }
+    
+    .Header_Container img:nth-child(2) {
+        width: 27px;
+        height: 27px;
+    }
+}

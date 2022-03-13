@@ -1,32 +1,44 @@
 import { useState } from 'react'
 import './Carousel_Slider.css'
+import Slider from "react-slick";
+
+
+import { data } from './Data'
+
 
 function Carousel_Slider() {
-    const [pixel, setPixel] = useState(0)
-        
+    const settings = {
+        infinite: true,
+        speed: 500,
+        vertical : true,
+        arrows: false, 
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        pauseOnHover:false,
+        draggable: false
+    };
 
-
+     
     return(
-        <div className='Carousel_Container'>
-            <ul>
-                <li style={{transform:`translateY(${pixel}px)`}}>
-                    <img src="./logo/행정안전부.svg"/>
-                    범정부 공공데이터 활용 창업경진대회 대상 <br className="Carousel_Br"/>(대통령상)
-                </li>
-                <li style={{transform:`translateY(${pixel}px)`}}>
-                    <img src="./logo/고용노동부.svg"/>
-                    2021 소셜벤처 경연대회 일반부문 대상 <br className="Carousel_Br"/>(국무총리상)
-                </li>
-                <li style={{transform:`translateY(${pixel}px)`}}>
-                    <img src="./logo/중기부.svg"/>
-                    사회적경제박람회 소셜벤처IR 대상 <br className="Carousel_Br"/> (중소벤처기업부 장관상)
-                </li>
-                <li style={{transform:`translateY(${pixel}px)`}}>
-                    <img src="./logo/산업통상자원부.svg"/>
-                    산업통상자원부 공공데이터 활용 BI 공모전 대상 <br className="Carousel_Br"/>(산업통상자원부 장관상)
-                </li>
-            </ul>
-        </div>
+        <div>
+        <ul className='Carousel_Container'>
+        <Slider  {...settings}>
+            {
+              data.map((ele) => {
+                return (
+                  <div>
+                    <li className="Carousel_li" key={ele.key}>
+                      <img className="Carousel_img" src={ele.img}/>
+                      {ele.text} <br className="Carousel_Br"/>{ele.text_br}
+                    </li>
+                  </div>
+                )
+              })
+            }
+         </Slider>   
+        </ul>
+    </div>
     )
 }
 

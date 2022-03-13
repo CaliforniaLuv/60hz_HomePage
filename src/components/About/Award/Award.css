@@ -124,3 +124,19 @@
     display: none;
   }
 }
+
+@media screen and (max-width:420px) {
+  .Award_Container li {
+    font-size: 12px;
+    width: 85%;
+    height: 120px;
+    margin: 0 auto;
+  }
+
+  .Award_Container img {
+    height: 25px;
+    margin-bottom: 0px;
+  }
+
+  
+}

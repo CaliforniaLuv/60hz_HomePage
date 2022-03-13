@@ -1,5 +1,5 @@
 .About_Intro_Box {
-    padding: 250px 0 350px 0;
+    padding-top: 250px;
     background: #F5F8FA;
 }
 
@@ -18,14 +18,14 @@
 }
 
 .About_Intro_Box span {
-    font-size: 25px;
+    font-size: 19px;
     line-height: 40px;
 }
 
 .About_Intro_Img {
     display: flex;
     justify-content: center;
-    padding: 100px 0;
+    padding: 100px 0 150px 0;
 }
 
 .About_Intro_Img img {
@@ -33,20 +33,15 @@
 }
 
 .About_Plan_Box {
-    padding: 100px;
     display: flex;
-    justify-content: center; 
-    position: absolute;
-    left: 50%;
-    bottom: -125%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
+    justify-content: center;
 }
+
 
 .About_Award_Box {
     display: flex;
     justify-content: center;
-    margin: 450px 0 100px 0;
+    margin: 200px 0 100px 0;
 }
 
 .About_Partner_Box {
@@ -74,45 +69,34 @@
     font-size: 40px;
 }
 
-@media screen and (max-width: 1600px) {
-    .About_Plan_Box {
-        padding: 100px 30px;           
-    }
-}
 
 @media screen and (max-width: 1280px) {
-    
-    .About_Intro_Box {
-        padding: 230px 0 250px 0;
-    }
 
     .About_Intro_Box p {
         font-size: 37px;   
     }
 
     .About_Intro_Box span {
-        font-size: 17px;
-        line-height: 30px;
+        font-size: 15px;
+        line-height: 0px;
     }
 
     .About_Intro_Img img {
         height: 450px;
     }
 
-    .About_Plan_Box {
-        bottom: -105%;
-    }
+}
 
+@media screen and (max-width: 1080px) {
     .About_Award_Box {
-        margin: 350px 0 0 0;
+        margin: 100px 0 100px 0;
     }
-        
 }
 
 @media screen and (max-width: 980px) {
 
     .About_Intro_Box {
-        padding: 300px 0 140px 0
+        padding-top: 300px
     }
 
     .About_Img_Desk {
@@ -127,26 +111,9 @@
         display: block;
         width: 650px;
     }
-
-    .About_Plan_Box {
-        bottom: -105%;
-    }
-
-    .About_Award_Box {
-        margin: 250px 0 0 0;
-    }
 }
 
-@media screen and (max-width: 935px) {
 
-    .About_Plan_Box {
-        bottom: -160%;
-    }
-
-    .About_Award_Box {
-        margin: 650px 0 0 0;
-    }
-}
 
 @media screen and (max-width: 770px) {
     .About_Br {
@@ -158,7 +125,7 @@
     }
 
     .About_Intro_Box {
-        padding: 150px 0 140px 0;
+        padding-top: 150px;
     }
 
     .About_Intro_Box p {
@@ -183,15 +150,9 @@
         height: 420px;
     }
 
-    .About_Award_Box {
-        margin: 750px 0 0 0;
-    }
 }
 
 @media screen and (max-width: 680px) {
-    .About_Plan_Box {
-        bottom: -150%;
-    }
 
     .About_Intro_Box p {
         font-size: 25px;
@@ -206,7 +167,44 @@
         font-size: 25px;
     }
 
+
+}
+
+@media screen and (max-width: 580px) {
+    .About_Intro_Box span {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .About_Intro_Box {
+        padding-top: 125px;
+    }
+
+    .About_Intro_Img img {
+        width: 340px;
+        height: 310px;
+    }
+
+    .About_Intro_Img {
+        display: flex;
+        justify-content: center;
+        padding: 50px 0;
+    }
+
     .About_Award_Box {
-        margin: 750px 0 0 0;
+        margin: 100px 0 50px 0;
+    }
+
+    .About_Partner_Box {
+        padding-top: 50px;
+    }
+
+    .About_Partner_Box {
+        margin-bottom: 100px;
+    }
+
+    .About_Member_Box {
+        padding: 100px 0;
     }
 }

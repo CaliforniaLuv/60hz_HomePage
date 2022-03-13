@@ -2,7 +2,9 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 60px 30px;
-    width: 1300px;
+    width: 1440px;
+    padding: 130px 175px 90px 175px;
+    background-color: #fff;
 }
 
 .Master_Container li {
@@ -15,7 +17,7 @@
 }
 
 .Master_Container > li > h3 {
-    font-family: SUIT-Thin;
+    font-weight:lighter;
     
 }
 
@@ -96,8 +98,9 @@
 
 @media screen and (max-width: 1600px) { 
     .Master_Container {     
-        gap: 60px 10px;
-        width: 1200px;
+        gap: 60px 30px;
+        padding: 130px 100px 90px 100px;
+        width: 1300px;
     }
 
 
@@ -110,14 +113,15 @@
     }
 
     .Master_Container li {
-        width: 340px;
+        width: 350px;
     }
 }
 
 @media screen and (max-width: 1280px) {
     .Master_Container {
-        width: 100%;
         gap: 45px 30px;
+        padding: 130px 100px 90px 100px;
+        width: 1000px;
     }
 
     .Master_Container > li:nth-child(1) > h1 {
@@ -133,7 +137,7 @@
     }
 
     .Master_PJ1 {
-        margin-top: 27px;
+        margin-top: 35px;
     }
 
     .Master_Box h3 {
@@ -141,21 +145,25 @@
     }
 
     .Master_PJ1 img {
-        width: 20px;
-        height: 20px;
+        width: 17px;
+        height: 17px;
+        margin-bottom: 0px;
     }
 
     .Master_PJ1 a {
-        font-size: 15px;
+        display: flex;
+        align-items: center;
     }
 
     .Master_PJ2 img {
-        width: 20px;
-        height: 20px;
+        width: 17px;
+        height: 17px;
+        margin-bottom: 0px;
     }
 
     .Master_PJ2 a {
-        font-size: 15px;
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -163,8 +171,10 @@
 
     .Master_Container {
         grid-template-columns: repeat(2,1fr);
-        width: 600px;
+        width: 700px;
+        padding: 100px 50px 90px 50px;
     }
+    
     
     .Master_Container li:nth-child(1) {
         grid-column: span 2;
@@ -181,7 +191,9 @@
 @media screen and (max-width: 680px) {
 
     .Master_Container {   
-        width: 400px;
+        width: 550px;
+        padding: 70px 20px 50px 20px;
+        
     }
 
     .Master_Container li:nth-child(n + 2) {
@@ -206,13 +218,93 @@
 
     .Master_PJ1 {
         margin-top: 10px;
-        font-size: 13px;
+     
     }
-    .Master_PJ2 {
-        font-size: 13px;
-    } 
 
     .Master_Br_Mobile {
         display: block;
+    }
+}
+
+@media screen and (max-width: 580px) { 
+
+    .Master_Container {   
+        width: 400px;
+        gap: 20px 30px;
+    }
+
+    .Master_Container > li:nth-child(1) > h1 {
+        font-size: 30px;
+    }
+
+    .Master_Container > li:nth-child(1) > h3 {
+        font-size: 12px;
+    }
+
+
+    .Master_Container li:nth-child(n + 2) {
+        width: 158px;
+    }
+
+    .Master_Box h1 {
+        font-size: 18px;
+    }
+    
+    .Master_Box h3 {
+        font-size: 12px;
+    }
+
+    .Master_PJ1 img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .Master_PJ2 img {
+        width: 15px;
+        height: 15px;
+    }
+
+}
+
+
+@media screen and (max-width: 420px) {  
+
+    .Master_Box h3:nth-child(2) {
+        margin-top: 10px;
+    }
+
+    .Master_Container > li > h3 {
+        line-height: 20px;
+    }
+
+    .Master_Container {
+        width: 350px;
+        gap: 20px 10px;
+    }
+
+    .Master_Container li:nth-child(n + 2) {
+        width: 130px;
+    }
+
+    .Master_Container > li:nth-child(1) > h3 {
+        font-size: 10px;
+    }
+
+    .Master_Box h3 {
+        font-size: 10px;
+    }
+
+    .About_Intro_Box span {
+        font-size: 10px;
+    }
+
+    .Master_PJ1 img {
+        width: 12px;
+        height: 12px;
+    }
+
+    .Master_PJ2 img {
+        width: 12px;
+        height: 12px;
     }
 }

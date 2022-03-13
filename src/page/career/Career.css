@@ -19,7 +19,7 @@
 
 .Career_Hire_Box {
     margin: 300px auto;
-    max-width: 1400px;
+    max-width: 1300px;
     text-align: left;
 }
 
@@ -30,9 +30,9 @@
 
 
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1550px) {
     .Career_Hire_Box {
-        max-width: 1250px;
+        max-width: 1150px;
     }
 }
 
@@ -94,5 +94,15 @@
 
     .Career_Container main {
         padding-bottom: 250px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .Career_Container {
+        padding-top: 125px;
+    }
+
+    .Career_Container main {
+        padding-bottom: 150px;
     }
 }

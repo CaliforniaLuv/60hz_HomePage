@@ -17,13 +17,30 @@
  display: none;
 }
 
-.Business_Youtube {
+.Business_Youtube_Box {
     box-shadow: rgb(0 0 0 / 20%) 10px 10px 20px;
     padding: 25px;
     border-radius: 25px;
     width: 850px;
     height: 500px;
     overflow: hidden;
+}
+
+.Business_Youtube_Line {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.Business_Youtube {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    border-radius: 15px;
 }
 
 .Business_SunMap_Box article {
@@ -77,6 +94,8 @@
 .Business_Icon {
     width: 25px;
     height: 25px;
+    filter: invert(17%) sepia(84%) saturate(3782%) hue-rotate(220deg) brightness(50%) contrast(70%);
+    /* filter: invert(5%) sepia(97%) saturate(7045%) hue-rotate(233deg) brightness(97%) contrast(105%); */
 }
 
 
@@ -132,6 +151,8 @@
     margin-right: 80px;
 }
 
+
+
 .Business_Monitoring_Box article > div > div > h1:nth-child(1) {
     font-family: SUIT-Thin;
     font-size: 37px;
@@ -185,6 +206,19 @@
         display: none;
     }
 
+    .Business_Monitoring_Text {
+        display: flex;
+        font-size: 37px;
+        justify-content: center;
+        align-items: center;
+        line-height: 75px;
+    }
+
+    .Business_Monitoring_Box article > div > div > h1:nth-child(2) {
+        font-size: 37px;
+        margin-bottom: 0px;
+    }
+
     .Business_Br_After {
         display: block;
     }
@@ -229,7 +263,7 @@
         height: 40px;
     }
 
-    .Business_Youtube {
+    .Business_Youtube_Box {
         width: 600px;
         height: 360px;
     }
@@ -299,7 +333,7 @@
 
 
 @media screen and (max-width: 650px) { 
-    .Business_Youtube {
+    .Business_Youtube_Box {
         width: 450px;
         height: 275px;
     }
@@ -364,4 +398,168 @@
         font-size: 18px;
     }
 
+}
+
+
+@media screen and (max-width: 420px) { 
+
+    .Business_Container {
+        padding-top: 125px;
+    }
+
+    .Business_Youtube_Box {
+        width: 370px;
+        height: 220px;
+        border-radius: 15px;
+        padding: 15px;
+        box-shadow: rgb(0 0 0 / 15%) 10px 13px 20px;
+    }
+
+    .Business_Youtube {
+        border-radius: 10px
+    }
+
+    .Business_Img_Container {
+        width: 380px;
+        height: 230px;
+        border-radius: 15px;
+        padding: 15px;
+        box-shadow: rgb(0 0 0 / 15%) 10px 13px 20px;
+    }
+
+    .Business_Img_Box {
+        width: 380px;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    .Business_Img_png {
+        height: 1639px;
+        background-size: 345px;
+    }
+    
+    .Business_SunMap_Box article h1 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .Business_Main_Box {
+        margin-bottom: 13px;
+    }
+
+    .Business_Main_Box img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .Business_SunMap_Box article h3 {
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    .Business_SunMap_Box article span a {
+       font-size: 15px;
+    }
+    .Business_Icon {
+        width: 20px;
+        height: 20px;
+    }
+
+
+    .Business_Monitoring_Box article > div > div > h1:nth-child(1) {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .Business_Monitoring_Box article > div > div > h1:nth-child(2) {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .Business_Main_Box img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    .Business_Monitoring_Box article h3 {
+        font-size: 15px;
+        line-height: 30px; 
+    }
+
+    .Business_Monitoring_Box article span {
+        font-size: 15px;
+    }
+
+
+    @keyframes slideright {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(7px);
+        }
+      }
+} 
+
+
+@media screen and (max-width: 375px) { 
+    .Business_Youtube_Box {
+        width: 330px;
+        height: 195px;
+    }
+
+    .Business_Img_Container {
+        width: 330px;
+        height: 195px;
+    }
+
+    .Business_Img_Box {
+        width: 340px;
+        height:165px;
+    }
+
+    /*  */
+
+    .Business_SunMap_Box article h1 {
+        font-size: 17px;
+        
+    }
+    .Business_Main_Box img {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+    }
+
+    .Business_SunMap_Box article h3 {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .Business_SunMap_Box article span a {
+       font-size: 13px;
+    }
+    .Business_Icon {
+        width: 15px;
+        height: 15px;
+    }
+
+    /*  */
+
+    
+    .Business_Monitoring_Box article > div > div > h1:nth-child(1) {
+        font-size: 17px;
+    }
+    .Business_Monitoring_Box article > div > div > h1:nth-child(2) {
+        font-size: 17px;
+    }
+    
+
+    .Business_Monitoring_Box article h3 {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .Business_Monitoring_Box article span {
+        font-size: 13px;
+    }
 }

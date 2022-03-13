@@ -19,7 +19,7 @@ function Header({handleModal, handleAward, handleModalBool, MdCheck}) {
     }, [MdCheck])
     
     const openClick = (value) => {
-
+        
         if(value === "check" ) {
             handleModalBool(true)
             handleModal("") 

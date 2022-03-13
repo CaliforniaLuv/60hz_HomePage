@@ -8,7 +8,7 @@
 .Footer_List_Box {
     display: flex;
     gap: 100px;
-    line-height: 25px;
+    line-height: 30px;
 }
 
 .Footer_List_Box > div:nth-child(1) {
@@ -38,7 +38,7 @@
 
 .Footer_Company_Box {
     text-align: left;
-    line-height: 25px;
+    line-height: 30px;
 }
 
 .Footer_Company_Box span {
@@ -101,5 +101,20 @@
 
     .Footer_List_Box div div:nth-child(2) {
         margin-top: 10px;
+    }
+}
+
+
+@media screen and (max-width: 375px) { 
+    .Footer_List_Box h3 {
+        font-size: 14px;
+    }
+    
+    .Footer_List_Box { 
+        gap: 80px;
+    }
+
+    .Footer_Infor_Box {
+        margin-right: 30px;
     }
 }

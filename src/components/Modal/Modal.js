@@ -24,7 +24,9 @@ function Modal({Modal_Hiden, handleModal, handleModalBool, handleMdCheck}) {
                     target="_blank" style={{ textDecoration: "none", color: "#000" }} 
                     onClick={() => openClick()}
                 >
-                    <li>햇빛바람지도</li>
+                    <li>
+                        <div className="Modal_List_First">햇빛바람지도</div>
+                    </li>
                 </a>
                 <Link to="/about"
                       style={{ textDecoration: "none", color: "black" }}

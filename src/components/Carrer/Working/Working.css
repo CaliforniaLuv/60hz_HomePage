@@ -1,6 +1,6 @@
 .Working_Container {
     margin: 0 auto;
-    max-width: 1440px;
+    max-width: 1300px;
 }
 
 .Working_Main {
@@ -11,7 +11,7 @@
 .Working_Text_Box {
     display: flex;
     margin-top: 80px;
-    gap: 210px;
+    gap: 143px;
     text-align: left;
 }
 
@@ -53,6 +53,7 @@
 
     .Working_Main {
         font-size: 37px;
+        margin-left: 7%;
     }
 
     .Working_Text_Box ul > h3 {
@@ -173,5 +174,14 @@
     .Working_Text_Box img{
         width: 50px;
         height: 45px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .Working_Text_Box {
+     
+        margin-top: 50px;
+     
+     
     }
 }

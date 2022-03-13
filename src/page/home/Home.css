@@ -135,6 +135,10 @@
     cursor: pointer;
 }
 
+.Home_Partners_Box > a > img {
+    margin-bottom: -3px;
+}
+
 .Home_Partners_Box > a:hover img {
     animation-name: slideright;
     animation-duration: 1s;
@@ -189,11 +193,21 @@
         height: 50px;
         font-size: 15px;
     }
+
+    .Home_Button_More {
+        width: 130px;
+        height: 50px;
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 500px) {
     .Home_Br {
         display: block;
+    }
+
+    .Home_Intro_Box {
+        height: 710px;
     }
 
     .Home_Intro_Box p {
@@ -203,6 +217,10 @@
 
     .Home_Infor_Box div:nth-child(1) h1 {
         font-size: 25px;
+    }
+
+    .Home_Youtube_Box {
+        border: 20px solid rgb(255, 255, 255);
     }
 
     .Home_Company_Box > div:nth-child(2) h1 {
@@ -219,4 +237,33 @@
         height: 50px;
         font-size: 17px;
     }
+}
+
+@media screen and (max-width: 420px) { 
+    .Home_Youtube_Box {
+        box-shadow: rgb(0 0 0 / 13%) 10px 10px 20px;
+    }
+    
+    .Home_Intro_Box {
+        padding-top: 125px;
+        height: 585px;
+    }
+
+    .Home_Infor_Box > div:nth-child(1) {
+        padding: 120px 0 70px 0;
+    }
+
+    .Home_Infor_Box > div:nth-child(3) {
+        padding-bottom: 120px;
+    }
+
+    .Home_Company_Box > div:nth-child(1) {
+        margin: 0 auto 120px auto;
+    }
+
+    .Home_Partners_Box {
+        padding: 50px 0 120px 0;
+    }
+
+
 }

@@ -18,10 +18,10 @@ function About({award}) {
                     <img className="About_Img_Desk" src="./ilerst/메인이미지.png"/>
                     <img className="About_Img_Tab" src="./ilerst/메인이미지_태블릿.png"/>
                 </div>
+                <div className="About_Plan_Box">
+                    <Master_Plan/>
+                </div>
             </main>
-            <div className='About_Plan_Box'>
-                <Master_Plan/>
-            </div>
             <div className='About_Award_Box'>
                 <Awards award={award}/>
             </div>
