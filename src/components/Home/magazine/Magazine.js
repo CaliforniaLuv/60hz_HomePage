@@ -11,7 +11,7 @@ function Magazine() {
                         <span>
                             조선일보 더 나은미래
                         </span>
-                        <img src="./icon/arrow_forward.svg"/>
+                        <img src="./icon/arrow_forward.svg" alt="Forward_Icon"/>
                     </div>
                     <p>
                         "재생에너지 <br className='Magazine_Br'/>
@@ -28,7 +28,7 @@ function Magazine() {
                         <span>
                             중앙일보
                         </span>
-                        <img src="./icon/arrow_forward.svg"/>
+                        <img src="./icon/arrow_forward.svg" alt="Forward_Icon"/>
                     </div>
                     <p>
                         SKT, 현대차도 주목...<br/> 
@@ -44,7 +44,7 @@ function Magazine() {
                         <span>
                             연합뉴스
                         </span>
-                        <img src="./icon/arrow_forward.svg"/>
+                        <img src="./icon/arrow_forward.svg" alt="Forward_Icon"/>
                     </div>
                     <p>
                         재생에너지 시대,  <br className='Magazine_Br'/>
@@ -60,7 +60,7 @@ function Magazine() {
                         <span>
                             머니투데이
                         </span>
-                        <img src="./icon/arrow_forward.svg"/>
+                        <img src="./icon/arrow_forward.svg" alt="Forward_Icon"/>
                     </div>
                     <p>
                         '태양광 기여도' <br className='Magazine_Br'/>
@@ -76,12 +76,12 @@ function Magazine() {
                         <span>
                             전기신문
                         </span>
-                        <img src="./icon/arrow_forward.svg"/>
+                        <img src="./icon/arrow_forward.svg" alt="Forward_Icon"/>
                     </div>
                     <p>
                         식스티헤르츠,<br/> 
                         임팩트 투자사와&nbsp;<br className='Magazine_Br'/>
-                        대기업 펀드로부터 투자유치
+                        대기업 펀드로부터 <br className='Magazine_Br_Mob'/>투자유치
                     </p>
                 </a>
             </li>
@@ -92,7 +92,7 @@ function Magazine() {
                         <span>
                             이투뉴스
                         </span>
-                        <img src="./icon/arrow_forward.svg"/>
+                        <img src="./icon/arrow_forward.svg" alt="Forward_Icon"/>
                     </div>
                     <p>
                         식스티헤르츠,<br/>임팩트투자사· 

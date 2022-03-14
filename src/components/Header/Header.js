@@ -77,9 +77,9 @@ function Header({handleModal, handleAward, handleModalBool, MdCheck}) {
                     <a href="/"
                        onClick={() => openClick(null)}
                     >
-                        <img src="./logo/60hz.svg"/>
+                        <img src="./logo/60hz.svg" alt='60hz_Logo'/>
                     </a>
-                    <img  onClick={() => openClick("check")} src="./icon/menu.svg"/>
+                    <img  onClick={() => openClick("check")} src="./icon/menu.svg" alt="Menu_Icon"/>
                 </div>
                 <nav className="Header_Nav_Box">
                     <div>

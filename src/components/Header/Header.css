@@ -157,6 +157,7 @@
     
     .Header_Container img:nth-child(1){
         width: 90px;
+        height: 100%;
     }
     
     .Header_Container img:nth-child(2) {

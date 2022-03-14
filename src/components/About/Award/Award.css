@@ -21,6 +21,10 @@
     height: 250px;
 }
 
+.Award_Br_Mob {
+  display: none;
+}
+
 .Award_Container span {
     font-family: SUIT-Thin;
 }
@@ -131,6 +135,7 @@
     width: 85%;
     height: 120px;
     margin: 0 auto;
+    line-height: 20px;
   }
 
   .Award_Container img {
@@ -138,5 +143,8 @@
     margin-bottom: 0px;
   }
 
+  .Award_Br_Mob {
+    display: block;
+  }
   
 }

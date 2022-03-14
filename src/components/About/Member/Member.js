@@ -10,7 +10,7 @@ function Member() {
                 <h3>3~6년 사이의 경력자가 <span>50%</span>로<br className="Member_Br"/> 가장 많은 비중을 차지하고 있습니다.</h3>
                 <h3>전체 남녀 성비는 <span>1:1</span>입니다.</h3>
             </article>
-            <img className="Member_Img" src="./ilerst/member.png" />
+            <img className="Member_Img" src="./ilerst/member.png" alt="Member_Img"/>
         </>
     )
 

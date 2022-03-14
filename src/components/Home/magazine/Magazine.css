@@ -14,6 +14,10 @@
     display: none;
 }
 
+.Magazine_Br_Mob {
+    display: none;
+}
+
 .Magazine_Box div {
     text-align: left;
     margin-bottom: 10px;
@@ -133,6 +137,7 @@
 
     .Magazine_Box p {
         font-size: 12px;
+        line-height: 20px;
     }
 
     .Magazine_Box div img {
@@ -140,5 +145,11 @@
         height: 10px;
     }
 
+    .Magazine_Br_Mob {
+        display: block;
+    }
 
+    .Magazine_Container {
+        height: 140px;
+    }
 }

@@ -15,9 +15,9 @@ function Modal({Modal_Hiden, handleModal, handleModalBool, handleMdCheck}) {
                 <Link to="/" style={{marginTop: '10px'}}
                       onClick={() => openClick('home')}
                 >
-                    <img src="./logo/60hz.svg"/>
+                    <img src="./logo/60hz.svg" alt="60hz_Logo"/>
                 </Link>
-                <img onClick={() => openClick()} src="./icon/close.svg"/>
+                <img onClick={() => openClick()} src="./icon/close.svg" alt="Close_Icon"/>
             </div>
             <ul className='Modal_List_Box'>
                  <a href='https://map.60hz.io/index.html' 

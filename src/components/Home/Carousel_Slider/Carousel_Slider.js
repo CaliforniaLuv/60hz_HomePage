@@ -22,22 +22,25 @@ function Carousel_Slider() {
      
     return(
         <div>
-        <ul className='Carousel_Container'>
+        <div className='Carousel_Container'>
         <Slider  {...settings}>
+          
             {
               data.map((ele) => {
                 return (
-                  <div>
-                    <li className="Carousel_li" key={ele.key}>
-                      <img className="Carousel_img" src={ele.img}/>
+                    <div  key={ele.key}>
+                      <div className="Carousel_li">
+                      <img className="Carousel_img" src={ele.img} alt={ele.alt}/>
                       {ele.text} <br className="Carousel_Br"/>{ele.text_br}
-                    </li>
-                  </div>
+                      </div>
+                    </div>
+                  
                 )
               })
             }
+          
          </Slider>   
-        </ul>
+        </div>
     </div>
     )
 }

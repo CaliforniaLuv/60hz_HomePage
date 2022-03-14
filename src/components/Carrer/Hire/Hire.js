@@ -21,7 +21,8 @@ function Hire() {
             <div>
                 <div className="Hire_Back_Box">
                     <h2>서비스 개발팀 - 백엔드</h2>
-                    <img className={`Hire_Arrow_Back ${back}`} src="./icon/arrow_up.svg" onClick={ back ==='' ? ()=>handleArrowBack("show1") : () => handleArrowBack("")}/>
+                    <img className={`Hire_Arrow_Back ${back}`} src="./icon/arrow_up.svg" alt="Up_Icon"
+                         onClick={ back ==='' ? ()=>handleArrowBack("show1") : () => handleArrowBack("")}/>
                 </div>
                 <article  className={`Hire_Text-Box ${back}`} >
                     <div>
@@ -63,7 +64,8 @@ function Hire() {
             <div>
                 <div className="Hire_Front_Box">
                     <h2>서비스 개발팀 - 프론트엔드</h2>
-                    <img className={`Hire_Arrow_Front ${front}`} src="./icon/arrow_up.svg" onClick={ front ==='' ? ()=>handleArrowFront("show1") : () => handleArrowFront("")}/>
+                    <img className={`Hire_Arrow_Front ${front}`} src="./icon/arrow_up.svg" alt="Up_Icon"
+                         onClick={ front ==='' ? ()=>handleArrowFront("show1") : () => handleArrowFront("")}/>
                 </div>
                 <article className={`Hire_Text-Box ${front}`}>
                     <div>

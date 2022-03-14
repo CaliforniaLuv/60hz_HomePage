@@ -22,7 +22,8 @@ function Master_Plan() {
                     <a href='https://map.60hz.io/index.html' 
                        target="_blank" style={{ textDecoration: "none", color: "#EC5B44" }}>
                         <span>햇빛바람지도</span>
-                        <img src='./icon/arrow_forward.svg' className="Magazine_Box_Svg"/>
+                        <img src='./icon/arrow_forward.svg' className="Magazine_Box_Svg"
+                             alt="forward_Icon"/>
                     </a>
                 </div>
             </li>
@@ -37,7 +38,8 @@ function Master_Plan() {
                     <HashLink smooth to="/business#Product"
                               style={{ textDecoration: "none", color: "#EC5B44" }}>
                         <span>통합관제시스템</span>
-                        <img src='./icon/arrow_forward.svg' className="Magazine_Box_Svg"/>
+                        <img src='./icon/arrow_forward.svg' className="Magazine_Box_Svg" 
+                             alt="foward_Icon"/>
                     </HashLink>
                 </div>
             </li>

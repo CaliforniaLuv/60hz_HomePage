@@ -113,7 +113,7 @@
 
 .Home_Company_Box > div:nth-child(2) > span {
     font-size: 17px;
-    color: #848484;
+    color: #757070;
 
 }
 
@@ -247,6 +247,12 @@
     .Home_Intro_Box {
         padding-top: 125px;
         height: 585px;
+    }
+
+    .Home_Partners_Box > a > img {
+        margin-bottom: -5px;
+        width: 24px;
+        height: 24px;
     }
 
     .Home_Infor_Box > div:nth-child(1) {

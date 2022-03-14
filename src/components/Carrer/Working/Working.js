@@ -10,9 +10,11 @@ function Working() {
             </h1>
             <div className="Working_Text_Box">
                 <div>
-                    <img src="./imoge/human.svg"/>
+                    <img src="./imoge/human.svg" alt="Human_Imoge"/>
                     <ul>
-                        <h3>집중할 수 있는 업무 환경</h3>
+                        <li>
+                            <h1>집중할 수 있는 업무 환경</h1>
+                        </li>
                         <li>
                             · 최신 사양 노트북 직무별 맞춤 지원
                         </li>
@@ -26,9 +28,11 @@ function Working() {
                     <span>* 청년재직자 내일채움공제 지원</span>
                 </div>
                 <div>
-                    <img src="./imoge/number.svg"/>
+                    <img src="./imoge/number.svg" alt="Number_Imoge"/>
                     <ul>
-                        <h3>유연한 근무시간</h3>
+                        <li>
+                            <h1>유연한 근무시간</h1>
+                        </li>
                         <li>
                             · 8-11시 시차 출퇴근제
                         </li>
@@ -44,9 +48,11 @@ function Working() {
                     </ul>
                 </div>
                 <div>
-                    <img src="./imoge/talk.svg"/>
+                    <img src="./imoge/talk.svg" alt="Talk_Imoge"/>
                     <ul>
-                        <h3>수평적인 소통문화</h3>
+                        <li>
+                            <h1>수평적인 소통문화</h1>
+                        </li>
                         <li>
                             · 한달 한번 전직원 올핸즈 미팅
                         </li>

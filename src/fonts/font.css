@@ -1,14 +1,17 @@
 @font-face {
     font-family: SUIT-SemiBold;
     src: url('./SUIT-SemiBold.otf') format("opentype");
+    font-display: swap;
 }
 
 @font-face {
     font-family: SUIT-Regular;
     src: url("./SUIT-Regular.otf") format("opentype");
+    font-display: swap;
 }
 
 @font-face {
     font-family: SUIT-Thin;
     src: url("./SUIT-Thin.otf") format("opentype");
+    font-display: swap;
 }

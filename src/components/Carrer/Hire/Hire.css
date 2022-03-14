@@ -222,4 +222,14 @@
     .Hire_Text-Box p {
         font-size: 13px;
     }
+
+    .Career_Hire_Box {
+        margin: 150px auto;
+    }
+
+    .Hire_Button {
+        width: 120px;
+        height: 45px;
+        font-size: 17px;
+    }
 } 

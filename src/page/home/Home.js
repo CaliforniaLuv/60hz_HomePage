@@ -7,6 +7,7 @@ import { HashLink } from 'react-router-hash-link';
 
 function Home() {
 
+
     
     return(
         <section>
@@ -73,7 +74,7 @@ function Home() {
                                   style={{ textDecoration: "none", color: "black" }}
                         >      
                             더 많은 파트너 보기
-                            <img src="./icon/arrow_forward.svg"/>   
+                            <img src="./icon/arrow_forward.svg" alt="Forward_Icon"/>   
                         </HashLink>
                     </div>
                 </div>

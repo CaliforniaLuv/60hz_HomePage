@@ -71,6 +71,7 @@
 @media screen and (max-width: 500px) {
     .Carousel_img {
         height: 30px;
+        width: 100%;
     }
 
     .Carousel_li {

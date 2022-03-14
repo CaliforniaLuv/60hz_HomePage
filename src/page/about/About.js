@@ -15,8 +15,8 @@ function About({award}) {
                 <span>전세계 기후 변화를 막기 위해 <br className='About_Br'/>  재생에너지를 늘리는 방안으로 </span><br className='About_Br_De'/>
                 <span>다양한 종류의 분산자원을 <br className='About_Br'/>  IT기술로 연결하고, 예측 및 관리 가능하도록 <br className='About_Br'/>  가상발전소를 구축합니다.</span>
                 <div className='About_Intro_Img'>
-                    <img className="About_Img_Desk" src="./ilerst/메인이미지.png"/>
-                    <img className="About_Img_Tab" src="./ilerst/메인이미지_태블릿.png"/>
+                    <img className="About_Img_Desk" src="./ilerst/메인이미지.png" alt="Main_Img"/>
+                    <img className="About_Img_Tab" src="./ilerst/메인이미지_태블릿.png" alt="Main_Mob_Img"/>
                 </div>
                 <div className="About_Plan_Box">
                     <Master_Plan/>
