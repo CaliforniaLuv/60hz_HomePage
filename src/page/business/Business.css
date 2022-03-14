@@ -131,7 +131,7 @@
     height: 3800px;
     background-size: 800px;
     /* background-size: 150px; */
-    background-image: url(/public//ilerst/통합관제시스템.avif) ;
+    background-image: url(통합관제시스템.avif) ;
     transform: translate3d(0, 0, 0);
     animation: moveSlideshow 30s linear infinite ;
 }

@@ -74,11 +74,11 @@ function Header({handleModal, handleAward, handleModalBool, MdCheck}) {
             <header className={`Header_Container ${scrollY}`}>
                 <div>
 
-                    <a href="/"
+                    <Link to="/"
                        onClick={() => openClick(null)}
                     >
                         <img src="./logo/60hz.svg" alt='60hz_Logo'/>
-                    </a>
+                    </Link>
                     <img  onClick={() => openClick("check")} src="./icon/menu.svg" alt="Menu_Icon"/>
                 </div>
                 <nav className="Header_Nav_Box">
