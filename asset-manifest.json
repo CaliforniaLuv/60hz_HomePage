@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/60hz_HomePage/static/css/main.4d363242.css",
+    "main.css": "/60hz_HomePage/static/css/main.e0b4aa14.css",
     "main.js": "/60hz_HomePage/static/js/main.24fab1fa.js",
-    "static/media/통합관제시스템.jpg": "/60hz_HomePage/static/media/통합관제시스템.8291d78b1e3086eab5bd.jpg",
+    "static/media/통합관제시스템.jpg": "/60hz_HomePage/static/media/통합관제시스템.8291d78b1e3086eab5bd.jpg",
     "static/media/SUIT-SemiBold.otf": "/60hz_HomePage/static/media/SUIT-SemiBold.fab9499918bd332b72bd.otf",
     "static/media/SUIT-Regular.otf": "/60hz_HomePage/static/media/SUIT-Regular.ee55d594a94c6e62d7f5.otf",
     "static/media/SUIT-Thin.otf": "/60hz_HomePage/static/media/SUIT-Thin.b85c8a7c3e9fc93f54f5.otf",
@@ -11,11 +11,11 @@
     "static/media/slick.ttf": "/60hz_HomePage/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "index.html": "/60hz_HomePage/index.html",
     "static/media/slick.woff": "/60hz_HomePage/static/media/slick.295183786cd8a1389865.woff",
-    "main.4d363242.css.map": "/60hz_HomePage/static/css/main.4d363242.css.map",
+    "main.e0b4aa14.css.map": "/60hz_HomePage/static/css/main.e0b4aa14.css.map",
     "main.24fab1fa.js.map": "/60hz_HomePage/static/js/main.24fab1fa.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d363242.css",
+    "static/css/main.e0b4aa14.css",
     "static/js/main.24fab1fa.js"
   ]
 }
