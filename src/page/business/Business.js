@@ -1,6 +1,12 @@
 import './Business.css'
+import { useState, useEffect } from 'react';
 
-function Business() {
+function Business({handleNav}) {
+    const [navText, setNavText] = useState("Header_Business")
+
+    useEffect(() => {
+        handleNav(navText)
+    }, [])
     return(
         <section className="Business_Container">
             <div className="Business_SunMap_Box">

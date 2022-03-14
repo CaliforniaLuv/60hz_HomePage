@@ -3,8 +3,14 @@ import Master_Plan from '../../components/About/Master_Plan/Master_Plan';
 import Awards from '../../components/About/Award/Award'
 import Partner from '../../components/About/Partner/Partner';
 import Member from '../../components/About/Member/Member';
+import { useEffect, useState } from 'react';
 
-function About({award}) {
+function About({award, handleNav}) {
+    const [navText, setNavText] = useState("Header_About")
+
+    useEffect(() => {
+        handleNav(navText)
+    }, [])
     
     return(
         <section>

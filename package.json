@@ -1,6 +1,6 @@
 {
   "name": "60hz",
-  "homepage": "https://CaliforniaLuv.github.io/60hz_HomePage",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

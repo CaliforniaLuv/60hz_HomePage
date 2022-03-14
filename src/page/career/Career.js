@@ -1,8 +1,14 @@
 import './Career.css';
 import Working from '../../components/Carrer/Working/Working';
 import Hire from '../../components/Carrer/Hire/Hire';
+import { useState, useEffect } from 'react';
 
-function Career() {
+function Career({handleNav}) {
+    const [navText, setNavText] = useState("Header_Career")
+
+    useEffect(() => {
+        handleNav(navText)
+    }, [])
 
     return(
         <>

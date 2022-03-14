@@ -193,7 +193,10 @@
     .Master_Container {   
         width: 550px;
         padding: 70px 20px 50px 20px;
-        
+    }
+
+    .Master_Container > li > h3 {
+        line-height: 20px;
     }
 
     .Master_Container li:nth-child(n + 2) {
@@ -274,7 +277,7 @@
     }
 
     .Master_Container > li > h3 {
-        line-height: 20px;
+        line-height: 17px;
     }
 
     .Master_Container {

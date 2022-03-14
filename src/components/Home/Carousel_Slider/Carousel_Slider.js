@@ -9,7 +9,7 @@ import { data } from './Data'
 function Carousel_Slider() {
     const settings = {
         infinite: true,
-        speed: 500,
+        speed: 1500,
         vertical : true,
         arrows: false, 
         slidesToShow: 1,

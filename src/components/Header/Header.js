@@ -2,10 +2,9 @@ import { useEffect, useState } from 'react'
 import { Link } from "react-router-dom";
 import './Header.css'
 
-function Header({handleModal, handleAward, handleModalBool, MdCheck}) {
+function Header({handleModal, handleAward, handleModalBool, MdCheck, nav, handleNav}) {
 
     const [scrollY, setScrollY] = useState('')
-    const [select, setSelect] = useState('')
     // Header 상단 메뉴 Click에 의한 state 렌더링 관리(useEffect)
     const [click, setClick] = useState(0)
 
@@ -24,21 +23,12 @@ function Header({handleModal, handleAward, handleModalBool, MdCheck}) {
             handleModalBool(true)
             handleModal("") 
         }
-        setClick(click+1)
-        window.localStorage.setItem("selected", value)
+        handleNav(value)
     }
 
 
 
-    // 헤더 메뉴 렌더링 effect 발동 시
-    useEffect(() => {
-        const data = window.localStorage.getItem("selected")
-        if(data !== 'check') {
-            setSelect(data)
-        } else if(MdCheck) {
-            setSelect(MdCheck)
-        }
-    },[click])
+   
 
     // // 스크롤 제어
     window.onscroll = () => {
@@ -94,7 +84,7 @@ function Header({handleModal, handleAward, handleModalBool, MdCheck}) {
                             onClick={() => openClick("Header_About")}
                         >
                             <p style={{fontFamily: 
-                                select === "Header_About" ? "SUIT-SemiBold" : ""}}
+                                nav === "Header_About" ? "SUIT-SemiBold" : ""}}
                             >
                                 ABOUT
                             </p>
@@ -106,7 +96,7 @@ function Header({handleModal, handleAward, handleModalBool, MdCheck}) {
                             onClick={() => openClick("Header_Business")}
                         >
                             <p style={{fontFamily: 
-                                select === "Header_Business" ? "SUIT-SemiBold" : ""}}>
+                                nav === "Header_Business" ? "SUIT-SemiBold" : ""}}>
                                 BUSINESS
                             </p>
                         </Link>
@@ -117,7 +107,7 @@ function Header({handleModal, handleAward, handleModalBool, MdCheck}) {
                             onClick={() => openClick("Header_Career")}
                         >
                             <p style={{fontFamily: 
-                                select === "Header_Career" ? "SUIT-SemiBold" : ""}}>
+                                nav === "Header_Career" ? "SUIT-SemiBold" : ""}}>
                             CAREER
                             </p>
                         </Link>

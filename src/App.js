@@ -43,6 +43,13 @@ function App() {
     setMdCheck(value)
   }
 
+  // 헤더 상단 메뉴 현위치 지정
+  const [nav, setNav] = useState("")
+
+  const handleNav = (value) => {
+    setNav(value)
+  }
+
 
   // 수상기록 ul 엘리먼트에 따른 Y축 스크롤 상태 관리
   const [award, setAward] = useState(false)
@@ -58,12 +65,12 @@ function App() {
       <ScrollToTop/>
       <div className="App">
         <Header handleModal={handleModal} handleAward={handleAward} 
-                handleModalBool={handleModalBool} MdCheck={MdCheck}/>
+                handleModalBool={handleModalBool} MdCheck={MdCheck} nav={nav} handleNav={handleNav}/>
         <Routes>
           <Route exact path="/" element={<Home/>} />
-          <Route  path="/about" element={<About award={award} />} />
-          <Route  path="/business" element={<Business/>} />
-          <Route  path="/career" element={<Career/>} />
+          <Route  path="/about" element={<About award={award} handleNav={handleNav}/>} />
+          <Route  path="/business" element={<Business handleNav={handleNav}/>} />
+          <Route  path="/career" element={<Career handleNav={handleNav}/>} />
           <Route path="*" element={<NotFound/>} />
         </Routes>
         <Together/>

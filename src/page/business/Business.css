@@ -5,6 +5,7 @@
 .Business_Main_Box img {
     width: 47px;
     height: 47px;
+    
 }
 
 .Business_SunMap_Box {
@@ -131,7 +132,7 @@
     height: 3800px;
     background-size: 800px;
     /* background-size: 150px; */
-    background-image: url('./통합관제시스템.jpg') ;
+    background-image: url('./통합관제시스템.avif') ;
     transform: translate3d(0, 0, 0);
     animation: moveSlideshow 30s linear infinite ;
 }
@@ -156,12 +157,13 @@
 .Business_Monitoring_Box article > div > div > h1:nth-child(1) {
     font-family: SUIT-Thin;
     font-size: 37px;
-    line-height: 65px;
+    line-height: 50px;
+    margin-top: 10px;
 }
 
 .Business_Monitoring_Box article > div > div > h1:nth-child(2) {
     font-size: 37px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 .Business_Monitoring_Box article h2 {
@@ -207,16 +209,16 @@
     }
 
     .Business_Monitoring_Text {
-        display: flex;
+     
         font-size: 37px;
         justify-content: center;
         align-items: center;
-        line-height: 75px;
+        line-height: 50px;
     }
 
     .Business_Monitoring_Box article > div > div > h1:nth-child(2) {
         font-size: 37px;
-        margin-bottom: 0px;
+        margin-bottom: 10px;
     }
 
     .Business_Br_After {
@@ -227,13 +229,10 @@
         margin: 30px 120px 0 0;
     }
 
-    .Business_Main_Box {
-        display: flex;
-        align-items:center
-    }
+ 
 
     .Business_Main_Box img {
-        margin-right: 20px;
+        margin-bottom: 0px;
     }
 
     .Business_Monitoring_Box {
@@ -261,6 +260,7 @@
     .Business_Main_Box img {
         width: 40px;
         height: 40px;
+        margin-bottom: 0px;
     }
 
     .Business_Youtube_Box {
@@ -317,7 +317,7 @@
     .Business_Monitoring_Box article > div > div > h1:nth-child(2) {
         font-size: 30px;
         line-height: 50px;
-        margin-bottom: 0px;
+        margin-bottom: 5px;
     }
 
     .Business_Monitoring_Box article h2 {
@@ -340,7 +340,8 @@
 
     .Business_SunMap_Box article h1 {
         font-size: 25px;
-        line-height: 50px;
+        line-height: 40px;
+        margin-bottom: 12px;
     }
 
     .Business_Main_Box img {
@@ -386,7 +387,7 @@
     .Business_Monitoring_Box article > div > div > h1:nth-child(2) {
         font-size: 25px;
         line-height: 40px;
-        
+        margin-bottom: 10px;
     }
 
     .Business_Monitoring_Box article h2 {
@@ -441,10 +442,11 @@
     .Business_SunMap_Box article h1 {
         font-size: 20px;
         line-height: 30px;
+        margin-bottom: 0px;
     }
 
     .Business_Main_Box {
-        margin-bottom: 13px;
+        margin-bottom: 5px;
     }
 
     .Business_Main_Box img {
@@ -470,20 +472,22 @@
     .Business_Monitoring_Box article > div > div > h1:nth-child(1) {
         font-size: 20px;
         line-height: 30px;
+        margin-top: 0px;
     }
     .Business_Monitoring_Box article > div > div > h1:nth-child(2) {
         font-size: 20px;
         line-height: 30px;
+        margin-bottom: 0px;
     }
     .Business_Main_Box img {
         width: 20px;
         height: 20px;
-        margin-right: 10px;
     }
 
     .Business_Monitoring_Box article h2 {
         font-size: 15px;
         line-height: 30px; 
+        
     }
 
     .Business_Monitoring_Box article span {
@@ -556,6 +560,8 @@
     }
     .Business_Monitoring_Box article > div > div > h1:nth-child(2) {
         font-size: 17px;
+        line-height: 15px;
+        margin-bottom: 7px;
     }
     
 
