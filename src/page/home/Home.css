@@ -242,6 +242,12 @@
 @media screen and (max-width: 420px) { 
     .Home_Youtube_Box {
         box-shadow: rgb(0 0 0 / 13%) 10px 10px 20px;
+        border: 15px solid rgb(255, 255, 255);
+        border-radius: 15px;
+    }
+
+    .Home_Youtube {
+        border-radius: 10px;
     }
     
     .Home_Intro_Box {
