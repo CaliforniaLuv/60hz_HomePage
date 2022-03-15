@@ -31,7 +31,7 @@ function About({award, handleNav}) {
             <div className='About_Award_Box'>
                 <Awards award={award}/>
             </div>
-            <div className='About_Partner_Box' id="Partner">
+            <div className='About_Partner_Box' id="partner">
                 <div>
                     <h1>
                         함께하는 기업들

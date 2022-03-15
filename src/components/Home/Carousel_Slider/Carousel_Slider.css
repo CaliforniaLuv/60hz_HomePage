@@ -44,7 +44,7 @@
 @media screen and (max-width: 770px) {
 
     .Carousel_Container {
-        margin-top: 70px;
+        margin-top: 70px !important;
         height: 150px;
     }
 
@@ -79,14 +79,14 @@
     }
 
     .Carousel_Container {
-        margin-top: 50px;
+        margin-top: 50px !important;
         height: 140px;
     }
 }
 
 @media screen and (max-width: 420px) { 
     .Carousel_Container {
-        margin-top: 40px;
+        margin-top: 40px !important;
         height: 140px;
     }
 }
@@ -101,7 +101,7 @@
     }
 
     .Carousel_Container {
-        margin-top: 30px;
+        margin-top: 30px !important;
         height: 130px;
     }
 }

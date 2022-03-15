@@ -73,7 +73,7 @@ function Home({handleNav}) {
                         </div>
                     </div>
                     <div className='Home_Partners_Box'>
-                        <HashLink to="/about#Partner"
+                        <HashLink to="/about#partner"
                                   style={{ textDecoration: "none", color: "black" }}
                         >      
                             더 많은 파트너 보기
