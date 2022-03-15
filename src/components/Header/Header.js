@@ -5,7 +5,7 @@ import './Header.css'
 
 function Header({handleModal, handleAward, handleModalBool, MdCheck, nav, handleNav}) {
 
-    const [ data, setData ] = useScroll({
+    const data = useScroll({
         scrollY: '',
         awardY: false,
     })

@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback} from 'react'
+import { useState, useEffect } from 'react'
 
 export default function Scroll(initalValue = null) { 
     // const [scrollY, setScrollY] = useState('')
@@ -45,5 +45,5 @@ export default function Scroll(initalValue = null) {
         // }
     }
 
-    return [data, scroll]
+    return data
 }
