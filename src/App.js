@@ -61,13 +61,13 @@ function App() {
 
 
   return (
-    <HashRouter>
+    <BrowserRouter>
       <ScrollToTop/>
       <div className="App">
         <Header handleModal={handleModal} handleAward={handleAward} 
                 handleModalBool={handleModalBool} MdCheck={MdCheck} nav={nav} handleNav={handleNav}/>
         <Routes>
-          <Route exact path="/" element={<Home/>} />
+          <Route exact path="/" element={<Home handleNav={handleNav}/>} />
           <Route  path="/about" element={<About award={award} handleNav={handleNav}/>} />
           <Route  path="/business" element={<Business handleNav={handleNav}/>} />
           <Route  path="/career" element={<Career handleNav={handleNav}/>} />
@@ -78,7 +78,7 @@ function App() {
         {modalBool ? <Modal Modal_Hiden={modal} handleModal={handleModal} 
               handleModalBool={handleModalBool} handleMdCheck={handleMdCheck}/> : null}
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

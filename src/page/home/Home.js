@@ -4,9 +4,13 @@ import Slide from '../../components/Home/Carousel_Slider/Carousel_Slider'
 import Magazine from '../../components/Home/magazine/Magazine'
 import Company from '../../components/Home/Company/Compony'
 import { HashLink } from 'react-router-hash-link';
+import { useEffect } from "react";
 
-function Home() {
+function Home({handleNav}) {
 
+    useEffect(() => {
+        handleNav(null)
+    }, [])
 
     
     return(
