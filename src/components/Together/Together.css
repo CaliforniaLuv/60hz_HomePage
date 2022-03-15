@@ -33,6 +33,8 @@
     cursor: pointer;
     transition: all .35s;
     font-family: SUIT-SemiBold;
+    text-decoration: none;
+    color: black;
 }
 
 .Together_Container button:hover {

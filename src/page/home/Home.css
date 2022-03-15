@@ -28,6 +28,8 @@
     cursor: pointer;
     transition: all .35s;
     font-family: 'SUIT-SemiBold';
+    text-decoration: none;
+    color: black;
 }
 
 .Home_Button_More {
@@ -41,6 +43,8 @@
     cursor: pointer;
     transition: all .35s;
     font-family: 'SUIT-SemiBold';
+    text-decoration: none;
+    color: black;
 }
 
 .Home_Button:hover {
