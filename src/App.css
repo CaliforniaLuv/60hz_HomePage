@@ -6,6 +6,11 @@
   list-style: none;
 }
 
+.Link_CSS {
+  text-decoration: none;
+  color: black;
+}
+
 .App {
   text-align: center;
 }

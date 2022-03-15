@@ -101,6 +101,8 @@
     border-radius: 100px;
     cursor: pointer;
     transition: all .35s;   
+    text-decoration: none;
+    color: black;
 }
 
 .Hire_Button:hover {

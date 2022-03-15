@@ -9,7 +9,7 @@ function Together() {
                 <h1>함께해요</h1>
                 <h2>에너지 시장의 새로운 미래를 열어갈 당신을 기다립니다.</h2>
                 <Link to="/career"
-                      style={{ textDecoration: "none", color: "black" }}
+                      className="Link_CSS"
                 >
                     <button>채용 바로가기</button>
                 </Link>

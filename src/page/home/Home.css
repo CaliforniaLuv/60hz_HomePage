@@ -48,6 +48,11 @@
     color: #FFF;
 }
 
+.Home_Button_More:hover {
+    background-color: #000;
+    color: #FFF;
+}
+
 .Home_Youtube_Box {
     max-width: 100%;
     display: inline-block;
@@ -168,7 +173,7 @@
     }
 
     .Home_Intro_Box {
-        
+        padding-top: 150px;
         height: 850px;
     }
     .Home_Intro_Box p {

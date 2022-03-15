@@ -26,8 +26,7 @@ function Home({handleNav}) {
                 </div>
        
                 <div>
-                    <Link to="/about"
-                          style={{ textDecoration: "none", color: "black" }}
+                    <Link to="/about" className="Link_CSS"
                     >
                         <button className='Home_Button'>더 알아보기</button>
                     </Link>
@@ -55,6 +54,7 @@ function Home({handleNav}) {
                 <div>
                     <a href="https://blue-ocarina-b66.notion.site/7521f6afa92c418080a84bfd148b74ea" 
                        target="_blank"
+                       className="Link_CSS"
                     >
                         <button className='Home_Button_More'>더보기</button>
                     </a>
@@ -74,7 +74,7 @@ function Home({handleNav}) {
                         </div>
                     </div>
                     <div className='Home_Partners_Box'>
-                        <HashLink smooth to="/about#Partner"
+                        <HashLink to="/about#Partner"
                                   style={{ textDecoration: "none", color: "black" }}
                         >      
                             더 많은 파트너 보기
