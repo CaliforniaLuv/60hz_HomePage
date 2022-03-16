@@ -1,6 +1,6 @@
 import './App.css';
 import './fonts/font.css';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, HashRouter } from "react-router-dom";
 import Header from './components/Header/Header';
 import Together from './components/Together/Together';
 import Footer from './components/Footer/Footer';
@@ -61,7 +61,7 @@ function App() {
 
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop/>
       <div className="App">
         <Header handleModal={handleModal} handleAward={handleAward} 
@@ -78,7 +78,7 @@ function App() {
         {modalBool ? <Modal Modal_Hiden={modal} handleModal={handleModal} 
               handleModalBool={handleModalBool} handleMdCheck={handleMdCheck}/> : null}
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
