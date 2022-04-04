@@ -154,11 +154,6 @@
 
 @media screen and (max-width: 680px) {
 
-    .About_Intro_Box p {
-        font-size: 25px;
-        line-height: 40px;
-    }
-
     .About_Partner_Box > div:nth-child(1) h1 {
         font-size: 25px;
     }
@@ -174,6 +169,17 @@
     .About_Intro_Box span {
         font-size: 12px;
     }
+
+    
+}
+
+@media screen and (max-width:500px) {
+
+    .About_Intro_Box p {
+        font-size: 25px;
+        line-height: 40px;
+    }
+    
 }
 
 @media screen and (max-width: 420px) {
