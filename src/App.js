@@ -18,6 +18,8 @@ import { useState } from 'react';
 
 function App() {
 
+  console.log(process.env.PUBLIC_URL)
+
   // 태블릿/모바일 버전 모달(Header 메뉴) 상태 관리
   const [modal, setModal] = useState("Modal_Hiden")
   const [modalBool, setModalBool] = useState(true)
@@ -61,7 +63,7 @@ function App() {
 
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <ScrollToTop/>
       <div className="App">
         <Header handleModal={handleModal} handleAward={handleAward} 

@@ -57,7 +57,11 @@ function Hire() {
                         <p>- 오픈 마켓, 소셜 커머스 등 전자상거래 서비스</p>
                     </div>
                     <div className="Hire_Button_Box">
-                        <button className="Hire_Button">지원하기</button>
+                        <a href="https://www.notion.so/014f5c1a80b94af7a4c4ccb3d6decffa"
+                            target="_blank" style={{ textDecoration: "none", color: "#fff" }}
+                        >
+                            <button className="Hire_Button">지원하기</button>
+                        </a>
                     </div>
                 </article>
             </div>
@@ -97,7 +101,11 @@ function Hire() {
                         <p>- Slack / Jira / Confluence</p>
                     </div>
                     <div className="Hire_Button_Box">
-                        <button className="Hire_Button">지원하기</button>
+                        <a href="https://www.notion.so/227c7223f9be4204ab3e9ab3258315de"
+                            target="_blank" style={{ textDecoration: "none", color: "#fff" }}
+                        >
+                            <button className="Hire_Button">지원하기</button>
+                        </a>
                     </div>
                 </article>
             </div>

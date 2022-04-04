@@ -25,7 +25,7 @@ function Working() {
                             · 업무 관련 도서 상시 신청 가능
                         </li>
                     </ul>
-                    <span>* 청년재직자 내일채움공제 지원</span>
+                    <span>* 청년내일채움공제 지원</span>
                 </div>
                 <div>
                     <img src="./imoge/number.svg" alt="Number_Imoge"/>
