@@ -1,0 +1,237 @@
+.Hire_Back_Box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #C8C8C8;;    
+    line-height: 100px;
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+.Hire_Br {
+    display: none;
+}
+
+.Hire_Blank {
+    display: none;
+}
+
+.Hire_Arrow_Back.show1 {
+    cursor: pointer;
+    transition: all ease 1s;
+    transform: rotate( -180deg );
+}
+
+.Hire_Arrow_Back {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all ease 1s;
+    transform: rotate( 0deg );
+}
+
+.Hire_Arrow_Front.show1 {
+    cursor: pointer;
+    transition: all ease 1s;
+    transform: rotate( -180deg );
+}
+
+.Hire_Arrow_Front {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all ease 1s;
+    transform: rotate( 0deg );
+}
+
+.Hire_Front_Box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #C8C8C8;;
+    line-height: 100px;
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+
+
+.Hire_Text-Box.show1 {
+    font-size: 23px;
+    max-height: 1200px;
+}
+
+
+.Hire_Text-Box {
+    transition: all 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
+}
+
+
+
+.Hire_Text-Box div{
+    margin: 50px;
+}
+
+.Hire_Text-Box h3{
+    margin-bottom: 20px;
+}
+
+
+.Hire_Arrow_Front {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all ease 1s;
+}
+
+.Hire_Button_Box {
+    display: flex;
+    justify-content: center;
+}
+
+.Hire_Button {
+    margin: 40px 0;
+    width: 150px;
+    height: 70px;
+    font-size: 20px;
+    background: none;
+    border: 2px solid #000;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all .35s;   
+    text-decoration: none;
+    color: black;
+}
+
+.Hire_Button:hover {
+    background-color: #000;
+    color: #FFF;
+}
+
+@media screen and (max-width: 1280px) { 
+
+    .Hire_Back_Box h2 {
+        font-size: 27px;
+    }
+
+    .Hire_Front_Box h2 {
+        font-size: 27px;
+    }
+
+    .Hire_Arrow_Back {
+        width: 27px;
+        height: 27px;
+    }
+
+    .Hire_Arrow_Front {
+        width: 27px;
+        height: 27px;
+    }
+}
+
+@media screen and (max-width: 1075px) {
+    .Hire_Text-Box h3 {
+        font-size: 25px;
+    }
+
+    .Hire_Text-Box p {
+        font-size: 20px;
+    }
+
+    .Hire_Br {
+        display: block;
+    }
+
+    .Hire_Blank {
+        display: contents
+    }
+}
+
+@media screen and (max-width: 770px) {
+
+    .Hire_Text-Box div {
+        margin: 50px 5px 50px 5px;
+    }
+    
+    .Hire_Back_Box h2 {
+        font-size: 25px;
+    }
+
+    .Hire_Front_Box h2 {
+        font-size: 25px;
+    }
+
+    .Hire_Text-Box h3 {
+        font-size: 20px;
+    }
+
+    .Hire_Text-Box p {
+        font-size: 17px;
+    }
+
+    .Hire_Arrow_Back {
+        width: 25px;
+        height: 25px;
+    }
+
+    .Hire_Arrow_Front {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    
+
+    .Hire_Text-Box div {
+        margin: 50px 0px 50px 0px;
+    }
+
+    .Hire_Text-Box p {
+        font-size: 15px;
+    }
+
+    .Career_Hire_Box h1 {
+        font-size: 23px;
+    }
+
+    .Hire_Back_Box h2 {
+        font-size: 18px;
+    }
+
+    .Hire_Front_Box h2 {
+        font-size: 18px;
+    }
+
+    .Hire_Arrow_Back {
+        width: 15px;
+        height: 15px;
+    }
+
+    .Hire_Arrow_Front {
+        width: 15px;
+        height: 15px;
+    }
+
+    .Hire_Text-Box h3 {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .Hire_Text-Box p {
+        font-size: 13px;
+    }
+
+    .Career_Hire_Box {
+        margin: 150px auto;
+    }
+
+    .Hire_Button {
+        width: 120px;
+        height: 45px;
+        font-size: 17px;
+    }
+} 

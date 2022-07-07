@@ -1,0 +1,118 @@
+.Career_Container {
+    padding-top: 240px;
+    background: linear-gradient(172.3deg, rgba(254, 251, 193, 0.92) 0%, 
+    rgba(198, 245, 255, 0) 90.22%);
+}
+
+.Career_Container main {
+    padding-bottom: 260px;
+}
+
+.Career_Container main h1 {
+    font-size: 45px;
+    line-height: 65px;
+}
+
+.Career_Container main > img {
+    margin-top: 30px;
+}
+
+.Career_Br_Mob {
+    display: none;
+}
+
+.Career_Hire_Box {
+    margin: 300px auto;
+    max-width: 1300px;
+    text-align: left;
+}
+
+.Career_Hire_Box h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+
+
+@media screen and (max-width: 1550px) {
+    .Career_Hire_Box {
+        max-width: 1150px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+
+    .Career_Container main h1 {
+        font-size: 37px;
+        line-height: 50px;
+        font-family: 'SUIT-SemiBold';
+    }
+
+    .Career_Hire_Box {
+        max-width: 1050px;
+    }
+
+    .Career_Hire_Box h1 {
+        font-size: 37px;
+    }
+}
+
+@media screen and (max-width: 1075px) {
+    .Career_Hire_Box {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+
+    .Career_Container {
+        padding-top: 150px;
+    }
+
+    .Career_Container main h1 {
+        font-size: 37px;
+        line-height: 50px;
+    }
+
+    .Career_Container main > img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .Career_Hire_Box h1 {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Career_Container main h1 {
+        font-size: 25px;
+        line-height: 45px;
+    }
+
+
+    .Career_Container main > img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .Career_Container main {
+        padding-bottom: 250px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .Career_Br_Mob {
+        display: block;
+    }
+    .Career_Br {
+        display: none;
+    }
+    .Career_Container {
+        padding-top: 125px;
+    }
+
+    .Career_Container main {
+        padding-bottom: 150px;
+    }
+}

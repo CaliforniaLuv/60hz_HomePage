@@ -1,0 +1,173 @@
+.Partner_Container {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+.Partner_Box {
+    width: 1250px;
+    border-bottom: 0.5px solid #b0afaf;;    
+}
+
+.Partner_Box_Mobile {
+    display: none;
+}
+
+.Partner_Box_Mobile_Inups {
+    display: none;
+}
+
+.Partner_Box:nth-last-child(1) {
+    border-bottom: none
+}
+
+.Partner_Box span {
+    font-size: 18px;
+    position: relative;
+    bottom: 40px;
+    width: 200px;
+    display: inline-block;
+    font-family: SUIT-Bold;
+    font-weight: 600;
+}
+
+.Partner_Box img {
+    height: 90px;
+    
+}
+
+
+@media screen and (max-width: 1280px) {
+
+    .Partner_Box {
+        width: 740px;
+    }
+
+    .Partner_Container div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+    }
+
+    .Partner_Box span {
+        text-align: center;
+        bottom: 0px;
+    }
+
+    .Partner_Box img {
+        height: 70px;
+    }
+
+    .Partner_Box_Img {
+        display: none;
+    }
+
+    .Partner_Box_Mobile {
+        display: block;
+        width: 100px;
+    }
+
+    .Partner_Box img.Partner_Box_Mobile_Inups {
+        display: block;
+        width: 100px;
+        height: 45px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 770px) { 
+    .Partner_Box {
+        width: 630px;
+    }
+    
+    .Partner_Box img {
+        height: 50px;
+    }
+
+    .Partner_Box span {
+        font-size: 15px;
+    }
+
+    .Partner_Box img.Partner_Box_Mobile_Inups {
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 550px) { 
+    .Partner_Box {
+        width: 450px;
+    }
+    .Partner_Box img {
+        height: 40px;
+    }
+
+    .Partner_Box_Mobile {
+        display: block;
+        width: 80px;
+    }
+
+    .Partner_Box img.Partner_Box_Mobile_Inups {
+        height: 30px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 420px) { 
+    
+
+    .Partner_Box span {
+        font-size: 15px;
+        width: 140px;
+    }
+
+    .Partner_Box img {
+        height: 37px;
+    }
+
+    .Partner_Box {
+        width: 90%;
+    }
+
+    .About_Partner_Box > div:nth-child(1) h1 {
+        margin-bottom: 8px;
+    }
+
+    .Partner_Box img.Partner_Box_Mobile_Inups {
+        height: 20px;
+    }
+
+    .Partner_Box_Mobile {
+        width: 60px;
+    }
+    
+}
+
+
+@media screen and (max-width: 370px) { 
+    
+
+    .Partner_Box span {
+        font-size: 13px;
+        width: 130px;
+    }
+
+    .Partner_Box img {
+        height: 30px;
+    }
+
+    .Partner_Box {
+        width: 90%;
+    }
+
+    .Partner_Box img.Partner_Box_Mobile_Inups {
+        height: 15px;
+    }
+
+    .Partner_Box_Mobile {
+        width: 50px;
+    }
+    
+}

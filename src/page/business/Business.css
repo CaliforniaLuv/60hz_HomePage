@@ -1,0 +1,576 @@
+.Business_Container {
+    padding-top: 200px;
+}
+
+.Business_Main_Box img {
+    width: 47px;
+    height: 47px;
+    
+}
+
+.Business_SunMap_Box {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 200px;
+}
+
+.Business_Br_After {
+ display: none;
+}
+
+.Business_Youtube_Box {
+    box-shadow: rgb(0 0 0 / 20%) 10px 10px 20px;
+    padding: 25px;
+    border-radius: 25px;
+    width: 850px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.Business_Youtube_Line {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.Business_Youtube {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.Business_SunMap_Box article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-left: 80px;
+}
+
+.Business_SunMap_Box article h1 {
+    font-size: 37px;
+    line-height: 75px;
+}
+
+.Business_SunMap_Box article h2 {
+    font-size: 25px;
+    line-height: 45px;
+    font-weight: 100;
+}
+
+.Business_SunMap_Box article span {
+    margin-top: 40px;
+    font-size: 25px;
+    color: #1D336A;
+}
+
+.Business_SunMap_Box article span a { 
+    display: flex;
+    align-items: center;
+    font-family: SUIT-SemiBold;
+}
+
+.Business_SunMap_Box article span a:hover img { 
+    animation-name: slideright;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes slideright {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(15px);
+    }
+  }
+
+.Business_Icon {
+    width: 25px;
+    height: 25px;
+    filter: invert(17%) sepia(84%) saturate(3782%) hue-rotate(220deg) brightness(50%) contrast(70%);
+    /* filter: invert(5%) sepia(97%) saturate(7045%) hue-rotate(233deg) brightness(97%) contrast(105%); */
+}
+
+
+/* ################## Article Bottom ################## */
+
+.Business_Monitoring_Box {
+    display: flex;
+    justify-content: center;
+    background: #F5F8FA;
+    padding: 200px 0;
+}
+
+.Business_Img_Container {
+    display: flex;
+    justify-content: center;
+    width: 850px;
+    padding: 25px 0px;
+    border-radius: 25px;
+    background: #fff;
+    box-shadow: rgb(0 0 0 / 20%) 10px 10px 20px;
+}
+
+.Business_Img_Box {
+    border-radius: 15px;
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+}
+
+
+.Business_Img_png {
+    width: 800px;
+    height: 3800px;
+    background-size: 800px;
+    /* background-size: 150px; */
+    background-image: url('./통합관제시스템.avif') ;
+    transform: translate3d(0, 0, 0);
+    animation: moveSlideshow 30s linear infinite ;
+}
+
+@keyframes moveSlideshow {
+    100% { 
+      transform: translateY(-47%);  
+    }
+  }
+
+
+.Business_Monitoring_Box article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-right: 80px;
+}
+
+
+
+.Business_Monitoring_Box article > div > div > h1:nth-child(1) {
+    font-family: SUIT-Thin;
+    font-size: 37px;
+    line-height: 50px;
+    margin-top: 10px;
+}
+
+.Business_Monitoring_Box article > div > div > h1:nth-child(2) {
+    font-size: 37px;
+    margin-bottom: 10px;
+}
+
+.Business_Monitoring_Box article h2 {
+    font-size: 25px;
+    line-height: 45px;
+    font-weight: 100;
+}
+
+.Business_Monitoring_Box article span {
+    margin-top: 40px;
+    font-size: 25px;
+    color: #1D336A;
+}
+
+.Business_Monitoring_Box article span a {
+    display: flex;
+    align-items: center;
+    font-family: SUIT-SemiBold;
+}
+
+.Business_Monitoring_Box article span a:hover img { 
+    animation-name: slideright;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.Business_Icon {
+    width: 25px;
+    height: 25px;
+}
+
+
+@media screen and (max-width: 1550px) {
+    .Business_SunMap_Box {
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 100px;
+    }
+
+    .Business_Br {
+        display: none;
+    }
+
+    .Business_Monitoring_Text {
+     
+        font-size: 37px;
+        justify-content: center;
+        align-items: center;
+        line-height: 50px;
+    }
+
+    .Business_Monitoring_Box article > div > div > h1:nth-child(2) {
+        font-size: 37px;
+        margin-bottom: 10px;
+    }
+
+    .Business_Br_After {
+        display: block;
+    }
+
+    .Business_SunMap_Box article {
+        margin: 30px 120px 0 0;
+    }
+
+ 
+
+    .Business_Main_Box img {
+        margin-bottom: 0px;
+    }
+
+    .Business_Monitoring_Box {
+        align-items: center;
+        flex-direction: column-reverse;
+        padding: 100px 0;
+    }
+
+    .Business_Monitoring_Box article {
+        margin: 50px 120px 0 0;
+    }
+
+    .Business_Main_Box > div > h1 {
+        font-size: 50px;
+    }
+}
+
+
+@media screen and (max-width: 900px) { 
+
+    .Business_Main_Box {
+        align-items: center;
+    }
+
+    .Business_Main_Box img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 0px;
+    }
+
+    .Business_Youtube_Box {
+        width: 600px;
+        height: 360px;
+    }
+
+    .Business_SunMap_Box article {
+        margin-right: 0px;
+    }
+
+    .Business_SunMap_Box article h1 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .Business_SunMap_Box article h2 {
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .Business_SunMap_Box article span {
+        font-size: 20px;
+    }
+
+    .Business_Img_Container {
+        width: 600px;
+        padding: 25px 0px;
+    }
+    
+    .Business_Img_Box {
+        width: 550px;
+        height: 360px;
+    }
+    
+    
+    .Business_Img_png {
+        width: 550px;
+        height: 2615px;
+        background-size: 550px;
+    }
+
+    .Business_Monitoring_Box article {
+        margin-right: 0px;
+    }
+
+
+
+    .Business_Monitoring_Box article > div > div > h1:nth-child(1) {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    
+    .Business_Monitoring_Box article > div > div > h1:nth-child(2) {
+        font-size: 30px;
+        line-height: 50px;
+        margin-bottom: 5px;
+    }
+
+    .Business_Monitoring_Box article h2 {
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .Business_Monitoring_Box article span {
+        font-size: 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 650px) { 
+    .Business_Youtube_Box {
+        width: 450px;
+        height: 275px;
+    }
+
+    .Business_SunMap_Box article h1 {
+        font-size: 25px;
+        line-height: 40px;
+        margin-bottom: 12px;
+    }
+
+    .Business_Main_Box img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .Business_SunMap_Box article h2 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .Business_SunMap_Box article span {
+        font-size: 18px;
+    }
+
+
+    .Business_Img {
+        width: 450px;
+        height: 275px;
+    }
+
+    .Business_Img_Container {
+        width: 450px;
+    }
+    
+    .Business_Img_Box {
+        width: 400px;
+        height: 275px;;
+    }
+    
+    .Business_Img_png {
+        width: 400px;
+        height: 1900px;
+        background-size: 400px;        
+    }
+
+    .Business_Monitoring_Box article > div > div > h1:nth-child(1) {
+        font-size: 25px;
+        line-height: 25px;
+    }
+    
+    .Business_Monitoring_Box article > div > div > h1:nth-child(2) {
+        font-size: 25px;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .Business_Monitoring_Box article h2 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .Business_Monitoring_Box article span {
+        font-size: 18px;
+    }
+
+}
+
+
+@media screen and (max-width: 420px) { 
+
+    .Business_Container {
+        padding-top: 125px;
+    }
+
+    .Business_Youtube_Box {
+        width: 370px;
+        height: 220px;
+        border-radius: 15px;
+        padding: 15px;
+        box-shadow: rgb(0 0 0 / 15%) 10px 13px 20px;
+    }
+
+    .Business_Youtube {
+        border-radius: 10px
+    }
+
+    .Business_Img_Container {
+        width: 380px;
+        height: 230px;
+        border-radius: 15px;
+        padding: 15px;
+        box-shadow: rgb(0 0 0 / 15%) 10px 13px 20px;
+    }
+
+    .Business_Img_Box {
+        width: 380px;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    .Business_Img_png {
+        height: 1639px;
+        background-size: 345px;
+    }
+    
+    .Business_SunMap_Box article h1 {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 0px;
+    }
+
+    .Business_Main_Box {
+        margin-bottom: 5px;
+    }
+
+    .Business_Main_Box img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .Business_SunMap_Box article h2 {
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    .Business_SunMap_Box article span a {
+       font-size: 15px;
+    }
+    .Business_Icon {
+        width: 20px;
+        height: 20px;
+    }
+
+
+    .Business_Monitoring_Box article > div > div > h1:nth-child(1) {
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 0px;
+    }
+    .Business_Monitoring_Box article > div > div > h1:nth-child(2) {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 0px;
+    }
+    .Business_Main_Box img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .Business_Monitoring_Box article h2 {
+        font-size: 15px;
+        line-height: 30px; 
+        
+    }
+
+    .Business_Monitoring_Box article span {
+        font-size: 15px;
+    }
+
+
+    @keyframes slideright {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(7px);
+        }
+      }
+} 
+
+
+@media screen and (max-width: 375px) { 
+    .Business_Youtube_Box {
+        width: 330px;
+        height: 195px;
+    }
+
+    .Business_Img_Container {
+        width: 330px;
+        height: 195px;
+    }
+
+    .Business_Img_Box {
+        width: 300px;
+        height:165px;
+    }
+
+    .Business_Img_png {
+        height: 1425px;
+        background-size: 300px;
+    }
+
+    /*  */
+
+    .Business_SunMap_Box article h1 {
+        font-size: 17px;
+        
+    }
+    .Business_Main_Box img {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+    }
+
+    .Business_SunMap_Box article h2 {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .Business_SunMap_Box article span a {
+       font-size: 13px;
+    }
+    .Business_Icon {
+        width: 15px;
+        height: 15px;
+    }
+
+    /*  */
+
+    
+    .Business_Monitoring_Box article > div > div > h1:nth-child(1) {
+        font-size: 17px;
+    }
+    .Business_Monitoring_Box article > div > div > h1:nth-child(2) {
+        font-size: 17px;
+        line-height: 15px;
+        margin-bottom: 7px;
+    }
+    
+
+    .Business_Monitoring_Box article h2 {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .Business_Monitoring_Box article span {
+        font-size: 13px;
+    }
+}

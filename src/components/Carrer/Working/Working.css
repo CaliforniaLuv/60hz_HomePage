@@ -1,0 +1,218 @@
+.Working_Container {
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.Working_Main {
+    font-size: 40px;
+    text-align: left;
+}
+
+.Working_Text_Box {
+    display: flex;
+    margin-top: 80px;
+    gap: 143px;
+    text-align: left;
+}
+
+.Working_Text_Box ul > li h1 {
+    font-size: 27px;
+    font-weight: bold;
+    line-height: 70px;
+}
+
+.Working_Text_Box ul li {
+    font-size: 22px;
+    line-height: 35px;
+    font-weight:lighter;
+    
+}
+
+.Working_Text_Box span {
+    font-size: 22px;
+    line-height: 35px;
+    font-weight:lighter
+}
+
+@media screen and (max-width: 1550px) {
+    .Working_Text_Box {
+        gap: 100px;
+        justify-content: center;
+    }
+    .Working_Main {
+        display: flex;
+        margin-left: 50px;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .Working_Text_Box {
+        gap: 60px;
+    }
+
+    .Working_Main {
+        font-size: 37px;
+        margin-left: 7%;
+    }
+
+    .Working_Text_Box ul > li h1 {
+        font-size: 25px;
+    }
+
+    .Working_Text_Box ul li {
+        font-size: 20px;
+    }
+    .Working_Text_Box span { 
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 1080px) {
+    
+    .Working_Text_Box {
+        gap: 30px;
+    }
+
+    .Working_Text_Box ul > li h1 {
+        font-size: 22px;
+    }
+
+    .Working_Text_Box ul li {
+        font-size: 17px;
+    }
+
+    .Working_Text_Box span { 
+        font-size: 17px;
+    }
+    
+    .Working_Text_Box img{
+        width: 75px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .Working_Text_Box {
+        flex-direction: column;
+        text-align: left;
+        margin-left: 100px;
+    }
+
+    .Working_Text_Box div:nth-child(1) {
+        margin-bottom: 50px;
+    }
+
+    .Working_Text_Box div:nth-child(2) {
+        margin-bottom: 50px;
+    }
+
+    .Working_Main {
+        display: block;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+
+    .Working_Text_Box ul > li h1 {
+        font-size: 27px;
+    }
+
+    .Working_Text_Box ul li {
+        font-size: 20px;
+    }
+
+    .Working_Text_Box span { 
+        font-size: 20px;
+    }
+    
+    .Working_Text_Box img{
+        width: 70px;
+        height: 65px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+
+    .Working_Text_Box {
+        margin-left: 50px;
+    }
+
+    .Working_Main {
+       font-size: 35px;
+    }
+
+
+    
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .Working_Text_Box {
+        margin-left: 50px;
+    }
+
+    .Working_Main {
+       font-size: 23px;
+    }
+
+
+    .Working_Text_Box ul > li h1 {
+        font-size: 23px;
+    }
+
+    .Working_Text_Box ul li {
+        font-size: 17px;
+    }
+
+    .Working_Text_Box span { 
+        font-size: 17px;
+    }
+    
+    .Working_Text_Box img{
+        width: 50px;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .Working_Text_Box {
+        margin-top: 50px; 
+    }
+
+    .Working_Text_Box ul > li h1 {
+        font-size: 20px;
+        line-height: 50px;
+    }
+
+    .Working_Text_Box ul li {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .Working_Text_Box span {
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width: 375px) { 
+    .Working_Text_Box img {
+        width: 45px;
+        height: 40px;
+    }
+
+    .Working_Text_Box ul > li h1 {
+        font-size: 18px;
+    }
+
+    .Working_Text_Box ul li {
+        font-size: 14px;
+    }
+
+    .Working_Text_Box span {
+        font-size: 14px;
+    }
+}

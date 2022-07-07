@@ -1,0 +1,132 @@
+.Modal_Container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    animation: slide-in-down 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    z-index: 2;
+}
+
+.Modal_Hiden {
+    display: none;
+}
+
+.Modal_Close {
+    animation: slide-in-up 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.Modal_Main_Box {
+    display: flex; 
+    justify-content: space-between;
+    margin: 27px 15px 10px 30px;
+}
+
+.Modal_Main_Box img:nth-child(2) {
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+}
+
+.Modal_List_Box {
+    text-align: left;
+    margin-top: 70px;
+    line-height: 70px;
+    font-size: 40px;
+}
+
+.Modal_List_Box li {
+    cursor: pointer;
+    padding-left: 20px;
+    font-family: SUIT-Thin;
+}
+
+.Modal_List_Box > a:nth-child(1) > li {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+.Modal_List_First {
+    width: 170px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    font-size: 26px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #EC5B44;
+    border-radius: 50px;
+}
+
+.Modal_List_Box > a:nth-child(4) > li {
+    color: #EC5B44;
+}
+
+.Modal_List_Box li:hover {
+    background: #F4F5F7;
+}
+
+@keyframes slide-in-up {
+    100% {
+      -webkit-transform: translateY(-1000px);
+      transform: translateY(-1000px);
+      opacity: 0;
+    }
+    0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+@keyframes slide-in-down {
+    0% {
+      -webkit-transform: translateY(-1000px);
+      transform: translateY(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+@media screen and (min-width: 771px) {
+    .Modal_Container {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 440px) { 
+    .Modal_Main_Box {
+        margin: 10px 15px 10px 30px;
+        align-items: center;
+    }
+
+    .Modal_Main_Box img {
+        width: 90px;
+    }
+
+    .Modal_Main_Box img:nth-child(2) {
+        height: 27px;
+        width: 27px;
+    }
+
+    .Modal_List_Box {
+        margin-top: 50px;
+        line-height: 60px;
+        font-size: 30px;
+    }
+
+    .Modal_List_First {
+        width: 140px;
+        height: 40px;
+        border-radius: 50px;
+        font-size: 23px;
+    }
+}

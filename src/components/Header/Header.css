@@ -1,0 +1,167 @@
+.Header_Container {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    z-index: 1;
+}
+
+.Header_Container_Show {
+    border-bottom: 1px solid rgb(195, 193, 193);
+    background-color:#fff;
+}
+
+.Header_Container > div {
+    text-align: left;
+    width: 30%;
+    padding-left: 110px;
+}
+
+.Header_Container > div > img {
+    cursor: pointer;
+}
+
+
+.Header_Container div:nth-child(1) img:nth-child(2) {
+    display: none;
+}
+
+.Header_Nav_Box {
+    display: flex;
+    font-size: 19px;
+    width: 70%;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 110px;
+}
+
+.Header_Nav_Box div {
+    margin-left: 115px;
+}
+
+.Header_Nav_Box div:nth-child(n+2){
+    height: 30px;
+    margin-top: 4px;
+}
+
+.Header_Nav_Box div:hover:nth-child(n+2) p{
+    border-bottom: 2px solid #000;
+    width: 100%;
+}
+
+.Header_Nav_Box div:hover:nth-last-child(1) p{
+    border-bottom: 2px solid #EC5B44;
+    width: 100%;
+}
+
+
+
+.Header_Nav_Box div:nth-child(1) {
+    width: 140px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #EC5B44;
+    border-radius: 50px;
+}
+
+.Header_Nav_Box div p{
+    cursor: pointer;
+}
+
+.Header_Nav_Box div:nth-last-child(1) p{
+    color: #EC5B44;
+}
+
+.Header_Selected {
+    font-family: "SemiBold";
+}
+
+@media screen and (max-width: 1300px) {
+    .Header_Nav_Box {
+        padding-right: 70px;
+    }
+
+    .Header_Nav_Box div {
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .Header_Container > div {
+        width: 15%;
+        padding-left: 30px;
+    }
+
+    .Header_Nav_Box {
+        width: 85%;
+        padding-right: 40px;
+    }
+
+    .Header_Nav_Box div {
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .Header_Nav_Box {
+  
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .Header_Nav_Box {
+        display: none;
+    }
+   
+    .Header_Icon {
+        display: block;
+        position: absolute;
+        right: 15px;
+    }
+
+    .Header_Icon img {
+        height: 45px;
+        width: 45px;
+        cursor: pointer;
+    }
+
+    .Header_Container div:nth-child(1) {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .Header_Container div:nth-child(1) img:nth-child(2) {
+        display: block;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+}
+
+
+@media screen and (max-width: 420px) { 
+    .Header_Container {
+        height: 55px;
+    }
+    
+    .Header_Container a:nth-child(1){
+        display: flex;
+    }
+    
+    .Header_Container img:nth-child(1){
+        width: 90px;
+        height: 100%;
+    }
+    
+    .Header_Container img:nth-child(2) {
+        width: 27px;
+        height: 27px;
+    }
+}
